@@ -572,16 +572,11 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
                                         $postids = 0;
 //echo '<pre>';
 //print_r($entries);
-                                foreach ($entries as $entry) {
+                                        foreach ($entries as $entry) {
                                             //echo $entry['id'];
-                                         // print('<pre>');
-                                         //   print_r($entry);
-										if($entry['type']==1){
-											$userdetails = WallModel::getUserDetails($entityManager, $entry['author_id']);
-											$infodetails = WallModel::getUserDetails($entityManager, $entry['owner_id']);
-										}else{
+                                   //         print('<pre>');
+                                    //        print_r($entry);
                                             $userdetails = WallModel::getUserDetails($entityManager, $entry['user_id']);
-                                        }
 ?>
 
 
@@ -595,15 +590,8 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 							<img class="image_border_style" src="uploads/<?php echo $userdetails[0]['profile_pic']; ?>"  alt="" style="width:49px;height:49px;">
 
 <div class="slider_title_style2">
-<?php if($entry['type']==1) {?>
-<span class="author_slide_top author_upload_name">
-	<?php echo $userdetails[0]['firstname'].'  '. $userdetails[0]['lastname'] ?> ->
-	<?php echo $infodetails[0]['firstname'].'  '. $infodetails[0]['lastname'] ?>
- </span>
-<?php } else{ ?>
-<span class="author_slide_top author_upload_name"><?php echo $userdetails[0]['firstname'] ?> <?php echo $userdetails[0]['lastname'] ?> </span>
-<?php } ?>
-<span></span><p class="update_profile_date">
+
+<span class="author_slide_top author_upload_name"><?php echo $userdetails[0]['firstname'] ?> <?php echo $userdetails[0]['lastname'] ?> </span><span></span><p class="update_profile_date">
 </p></div>														
 						</div>
 <div style="padding:10px;width:100%;">
