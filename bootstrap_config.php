@@ -22,7 +22,7 @@ $config = Setup::createXMLMetadataConfiguration(__DIR__."/config/mappings/xml", 
 
 $conn = array(
     'driver'   => 'pdo_mysql',
-    'host'     => '127.0.0.1',
+    'host'     => 'localhost',
     'dbname'   => 'wwwwhats_betaPhase',
     'user'     => 'root',
     'password' => ''

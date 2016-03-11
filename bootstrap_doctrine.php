@@ -22,10 +22,10 @@ $config = Setup::createXMLMetadataConfiguration(array(__DIR__."/config/xml"), $i
 
 $conn = array(
     'driver'   => 'pdo_mysql',
-    'host'     => '127.0.0.1',
+    'host'     => 'localhost',
     'dbname'   => 'wwwwhats_betaPhase',
-    'user'     => 'wwwwhats_root',
-    'password' => 'ZlS(O2nFmqMZ'
+    'user'     => 'root',
+    'password' => ''
 );
 // obtaining the entity manager
 $entityManager = Doctrine\ORM\EntityManager::create($conn, $config);

@@ -20,7 +20,7 @@ require_once "entities/PhotoAlbum.php";
 require_once 'model/Friends.php';
 require_once 'model/Notification.php';
 
-if (!class_exists("Doctrine\Common\Version.php", false)) {
+if (!class_exists("Doctrine/Common/Version.php", false)) {
     require_once "bootstrap_doctrine.php";
 }
 

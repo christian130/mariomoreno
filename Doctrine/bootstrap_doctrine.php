@@ -22,8 +22,8 @@ $config = Setup::createXMLMetadataConfiguration(array(__DIR__."/config/xml"), $i
 
 $conn = array(
     'driver'   => 'pdo_mysql',
-    'host'     => '127.0.0.1',
-    'dbname'   => 'whats_site',
+    'host'     => 'localhost:3306',
+    'dbname'   => 'wwwwhats_betaphase',
     'user'     => 'root',
     'password' => ''
 );
