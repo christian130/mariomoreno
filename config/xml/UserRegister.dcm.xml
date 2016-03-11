@@ -1,0 +1,42 @@
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                            http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="UserRegister" table="sh_users">
+        <id name="user_id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+
+        <field name="firstname" type="string" />
+        <field name="lastname" type="string" />
+        <field name="email" type="string" />
+        <field name="password" type="string" />
+        <field name="photo" type="string" />
+        <field name="activation" type="string" />
+        <field name="dob" type="date" />
+        <field name="activated" type="string" />
+        <field name="sessionid" type="string" />
+        <field name="registeration_status" type="string" />
+        <field name="home_city" type="integer" />
+        <field name="current_city" type="integer" />
+        <field name="profile_pic" type="string" />
+        <field name="registerdate" type="date" />
+        <field name="last_login" type="string" />
+        <field name="aboutyou" type="string" />
+        <field name="phonenumber" type="string" />
+        <field name="gender" type="string" />
+        <field name="interested" type="string" />
+        <field name="relationship" type="string" />
+        <field name="politicalview" type="string" />
+        <field name="religion" type="string" />
+        <field name="language" type="string" />
+        <field name="listinterest" type="string" />
+        <field name="work" type="string" />
+        <field name="education" type="string" />
+        <field name="cover_photo" type="string" />
+        <field name="forgotpwd" type="string" />
+        <field name="orginalpic" type="string" />
+    </entity>
+</doctrine-mapping>

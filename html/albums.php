@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>:WHATSDADILLY:</title>
+        <link rel="stylesheet" href="css/reset-min.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+        <link rel="stylesheet" href="css/colorbox.css" type="text/css" />
+        <script type="text/javascript" src="js/albums_header.js"></script>
+        <link rel="stylesheet" href="js/build/coverphoto.css" />
+        <script type="text/javascript" src="js/build/coverphoto.js"></script>
+        <link rel="stylesheet" href="css/marcel1.css" type="text/css" /> 
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+            <style>
+                .coverphoto, .output {
+                    width: 988px;
+                    height: 280px;
+                    border: 0px solid black;
+                    margin: -1px auto;
+                }
+            </style>
+            <script>
+                $(document).ready(function() {
+                    $("#openBox").colorbox({rel: 'openBox', iframe: true, width: "100%", height: "85%",
+                        onClosed: function() {
+                            clearAlbum();
+                        }
+                    });
+              
+                    $(".coverphoto").CoverPhoto({
+                        currentImage: '<?php echo $cover_photo; ?>',
+
+                        editable: false
+
+                    });
+           
+
+                });
+            </script>
+    </head>
+
+    <body  class="nobg">         
+        <?php include 'header.php'; ?>
+
+        <div class="midwht">
+            <div id="banner"><div class="coverphoto"></div></div>
+            <div class="hommid">  
+                <div style="width:988px;margin-top:-39px;margin-left: 10px;">
+
+                    <?php
+                    if (!$other) {
+                        //theses bind to open a box to upload a new album
+                    ?>
+                    <?php //the callback function its a ajax request that call func=remove_open on the photos.php  ?>
+
+                        <div class="album_form" style="z-index:100;position:relative;">
+                            <a class="newbutton" id="openBox" rel="openBox" href="album_new.php" title="New Album" style="margin-bottom: 4px;">
+                                <i class="fa fa-plus-circle" style="vertical-align: middle;font-size:18px;"></i>&nbsp;&nbsp;&nbsp;Create Album
+                            </a>
+
+
+                        </div>
+                    <?php } ?>
+                     <a class="newbutton"  style="z-index:100;position:relative;" href="<?php echo $ig_url; ?>" title="New Album" style="margin-bottom: 4px;">
+                        <i class="fa fa-plus-circle" style="vertical-align: middle;font-size:18px;"></i>&nbsp;&nbsp;&nbsp;Tumblr
+                    </a>
+                    <a class="newbutton"  style="z-index:100;position:relative;" href="<?php echo $ig_url; ?>" title="New Album" style="margin-bottom: 4px;">
+                        <i class="fa fa-plus-circle" style="vertical-align: middle;font-size:18px;"></i>&nbsp;&nbsp;&nbsp;Instagram
+                    </a>
+                    <div class="album_lists"  style="width:988px;display: inline-block;margin-top:-45px;">
+
+                        <?php
+                        echo Albums::listAlbum($entityManager, $params);
+                        ?>
+                    </div>
+                </div>
+                <div class="friendright" >
+
+                </div></div>
+        </div>
+
+    </body>
+</html>

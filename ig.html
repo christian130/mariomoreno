@@ -1,0 +1,843 @@
+<style>
+
+    .i-like-pop {
+        animation: 0.3s ease-out 0s normal none 1 running like-pop;
+    }
+    @keyframes like-pop {
+        0% {
+        background-size: 40px 40px;
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        background-size: 60px 60px;
+        opacity: 0;
+    }
+    }
+    .iImage {
+        background-image: url("http://photos-e.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10895446_1410355905924460_27846050_n.jpg");
+        background-size: 100% 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .lt-ie9 .Image:before, .Image:before {
+        content: "http://photos-e.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10895446_1410355905924460_27846050_n.jpg";
+        display: block;
+        padding-bottom: 100%;
+    }
+    .Image {
+        overflow: hidden;
+        position: relative;
+    }
+    .timelineBookmarkAvatar:after, .timelineCommentAvatar:after {
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    .timelineBookmarkAvatar .Image, .timelineCommentAvatar .Image {
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.95);
+    }
+    .timelineBookmarkAvatar:after, .timelineCommentAvatar:after {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    .timelineBookmarkAvatar:after, .timelineBookmarkAvatar .Image, .timelineCommentAvatar:after, .timelineCommentAvatar .Image {
+        border-radius: 2px;
+    }
+    .timelineSidebar {
+        float: left;
+        padding: 16px 0;
+        width: 224px;
+    }
+    .timelineCenter {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/shared/noise-2.png") repeat scroll 0 0 #e0e1e2;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-image: none;
+        border-style: solid;
+        border-width: 0 1px;
+        margin-left: 224px;
+        max-width: 512px;
+        min-width: 240px;
+        padding: 16px 32px;
+    }
+    .timelineFirst .timelineSidebar, .timelineFirst .timelineCenter {
+        padding-top: 32px;
+    }
+    .timelineLast .timelineSidebar {
+        padding-bottom: 32px;
+    }
+    .timelineLast .timelineCenter {
+        border-radius: 0 0 3px 3px;
+        border-width: 0 1px 1px;
+        padding-bottom: 32px;
+    }
+    .timelineBookmark {
+        margin-right: 24px;
+        padding-top: 4px;
+        position: relative;
+    }
+    .timelineBookmark .timelineBookmarkAvatar {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .timelineBookmark .Image {
+        height: 40px;
+        width: 40px;
+    }
+    .timelineBookmarkInfo {
+        padding: 0 52px 0 0;
+    }
+    .timelineBookmarkInfoUsername, .timelineBookmarkInfoTimestamp {
+        display: block;
+        text-align: right;
+    }
+    .timelineBookmarkInfoUsername {
+        overflow: hidden;
+        padding-left: 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .timelineBookmarkLocation {
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/feed/feed-assets.png") no-repeat scroll -4px -204px rgba(0, 0, 0, 0);
+        float: right;
+        margin: 12px 0 0 20px;
+        max-width: 85%;
+        overflow: hidden;
+        padding: 0 0 0 14px;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .timelineCard {
+        background: none repeat scroll 0 0 #fafafa;
+        border: 1px solid silver;
+        border-radius: 3px;
+        box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    .timelineCard .mediaPhoto {
+        position: relative;
+    }
+    .timelineCard .mediaPhoto, .timelineCard .mediaPhoto .i-like-big {
+        -moz-user-select: none;
+    }
+    .timelineCard .mediaPhoto .i-like-big {
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/p/glyph-heart-pop-big.png") no-repeat scroll 50% 50% / 40% 40% rgba(0, 0, 0, 0);
+        bottom: 0;
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .timelineCard .mediaPhoto .i-like-big-pop {
+        animation: 0.3s ease-out 0s normal none 1 running like-big-pop;
+    }
+    @keyframes like-big-pop {
+        0% {
+        background-size: 40% 40%;
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        background-size: 60% 60%;
+        opacity: 0;
+    }
+    }
+    .timelineLikes {
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/bg/white-gradient-100px.png") repeat-x scroll 50% 50% #e6e6e6;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 0 3px rgba(0, 0, 0, 0.1);
+        height: 40px;
+        margin: 1px 0 -1px;
+        position: relative;
+    }
+    .timelineLikeList {
+        line-height: 16px;
+        margin: 0 52px 0 48px;
+        overflow: hidden;
+        padding: 12px 0 12px 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .noLikes {
+        font-weight: 700;
+        visibility: hidden;
+    }
+    .timelineLikeButton {
+        -moz-user-select: none;
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/feed/feed-assets.png") no-repeat scroll 8px 6px rgba(0, 0, 0, 0);
+        border-right: 1px solid #ddd;
+        box-shadow: 1px 0 0 rgba(255, 255, 255, 0.9);
+        display: inline;
+        float: left;
+        height: 100%;
+        position: relative;
+        width: 48px;
+    }
+    .timelineLiked {
+        background-position: 8px -44px;
+    }
+    .timelineLikeButtonAnimation {
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/p/glyph-heart-pop.png") no-repeat scroll 50% 50% / 40px 40px rgba(0, 0, 0, 0);
+        display: block;
+        height: 100%;
+        left: -1px;
+        opacity: 0;
+        pointer-events: none;
+        position: relative;
+        top: 1px;
+        width: 100%;
+        z-index: 5;
+    }
+    .timelineLikeButton:active, .timelineLiked, .timelineLiked:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15), 0 2px 0 rgba(255, 255, 255, 0.9), 0 0 2px rgba(0, 0, 0, 0.08) inset;
+    }
+    .timelineComments {
+        padding: 0;
+    }
+    .timelineComments .delete-comment {
+        right: 12px !important;
+    }
+    .timelineCommentsViewport {
+        max-height: 320px;
+    }
+    .timelineCommentsViewport.scrollAreaScrolling {
+        border-bottom: 1px solid #ddd;
+        margin-top: -1px;
+    }
+    .timelineComment, .timelineCommentMore, .timelineCommentComposer {
+        position: relative;
+    }
+    .timelineComment {
+        margin: 0 0 12px;
+    }
+    .timelineComment, .timelineCommentMore {
+        padding: 0 11px 0 48px;
+    }
+    .timelineComment {
+        text-overflow: ellipsis;
+        transition: opacity 0.2s ease 0s;
+    }
+    .timelineComment:last-child {
+        margin: 0;
+    }
+    .timelineCommentNew {
+        opacity: 0;
+    }
+    .timelineCommentAvatar.Image {
+        height: 24px;
+        left: 12px;
+        position: absolute;
+        top: 0;
+        width: 24px;
+    }
+    .timelineCommentUsername, .timelineCommentText {
+        position: relative;
+        top: 1px;
+    }
+    .timelineCommentUsername {
+        margin: 0 0.4em 0 0;
+    }
+    .timelineCommentComposer {
+        margin-bottom: 0;
+        padding: 12px;
+    }
+    .timelineCommentComposer .timelineCommentText {
+        top: 0;
+    }
+    .timelineCommentComposer .timelineCommentAvatar {
+        display: none;
+    }
+    .timelineCommentTextField {
+        border-color: #d8d8d8;
+        border-radius: 2px;
+        margin: 0;
+        padding: 8px 9px 7px;
+        width: 100%;
+    }
+    .timelineCommentMore {
+        margin: 0;
+        padding-bottom: 12px;
+    }
+    .timelineCaption.timelineComment {
+        border-bottom: 1px solid #e6e6e6;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        margin-bottom: 0;
+        padding: 12px 12px 11px 48px;
+        word-wrap: break-word;
+    }
+    .timelineCaption.timelineComment .timelineCommentAvatar {
+        top: 11px;
+    }
+    @media screen and (max-width: 744px) {
+        .timelineSidebar {
+            padding: 8px 0;
+            width: 30.1075%;
+        }
+        .timelineCenter {
+            margin-left: 30.1075%;
+            padding: 8px 20px 16px;
+        }
+        .timelineFirst .timelineSidebar, .timelineFirst .timelineCenter {
+            padding-top: 20px;
+        }
+        .timelineLast .timelineCenter {
+            padding-bottom: 24px;
+        }
+        .timelineBookmark {
+            margin-right: 16px;
+        }
+    }
+    @media screen and (min-width: 521px) {
+        .timelineCenter {
+            box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
+        }
+        .timelineLast .timelineCenter {
+            box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 -1px 0 rgba(0, 0, 0, 0.05) inset;
+        }
+    }
+    @media screen and (max-width: 520px) {
+        .timelineCenter, .timelineSidebar {
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        }
+        .timelineDivider .timelineDividerText {
+            background: url("../../images/shared/noise-2.png") repeat scroll 0 0 #edeeef;
+        }
+        .timelineCenter {
+            border: medium none;
+            margin-left: 0;
+        }
+        .timelineCenter, .timelineFirst .timelineCenter {
+            padding-top: 12px;
+        }
+        .timelineFirst .timelineSidebar {
+            padding-top: 20px;
+        }
+        .timelineLast .timelineSidebar {
+            display: none;
+        }
+        .timelineLast .timelineCenter {
+            border-radius: 0;
+            padding-bottom: 24px;
+        }
+        .timelineSidebar {
+            float: none;
+            padding-bottom: 0;
+            width: auto;
+        }
+        .timelineBookmark {
+            margin-right: 20px;
+            min-height: 36px;
+            padding-left: 72px;
+            text-align: left;
+        }
+        .timelineBookmark .timelineBookmarkAvatar {
+            left: 20px;
+            right: auto;
+            top: 0;
+        }
+        .timelineBookmarkInfo {
+            padding: 0;
+        }
+        .timelineBookmarkInfoUsername {
+            float: left;
+            padding-left: 0;
+        }
+        .timelineBookmarkInfoTimestamp {
+            float: right;
+        }
+        .timelineBookmarkInfoUsername {
+            margin-right: 0.4em;
+        }
+        .timelineBookmarkLocation {
+            clear: left;
+            float: left;
+            margin-left: -1px;
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .timelineCenter, .timelineFirst .timelineCenter {
+            padding: 8px;
+        }
+        .timelineFirst .timelineSidebar {
+            padding-top: 12px;
+        }
+        .timelineBookmark {
+            margin-right: 9px;
+            min-height: 36px;
+            padding-left: 56px;
+        }
+        .timelineBookmark .timelineBookmarkAvatar {
+            left: 8px;
+        }
+        .timelineBookmarkInfoTimestamp .timelineBookmarkInfoTimestampContent {
+            display: none;
+        }
+        .timelineBookmarkInfoTimestamp:after {
+            content: attr(data-timestamp-short);
+            text-indent: 0;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .timelineCenter, .timelineFirst .timelineCenter {
+            padding: 8px 4px;
+        }
+        .timelineBookmark {
+            margin-right: 5px;
+            min-height: 32px;
+            padding-left: 44px;
+            padding-top: 0;
+        }
+        .timelineBookmark .timelineBookmarkAvatar {
+            left: 4px;
+        }
+        .timelineBookmark .Image {
+            height: 32px;
+            width: 32px;
+        }
+        .timelineCommentsViewport .scrollAreaContents {
+            padding: 4px 0 0;
+        }
+        .timelineComment, .timelineCaption {
+            margin: 0;
+        }
+        .timelineComment {
+            padding: 4px 8px 0 12px;
+        }
+        .timelineComment .delete-comment {
+            top: 6px !important;
+        }
+        .timelineComment:last-child {
+            padding-bottom: 0;
+        }
+        .timelineCommentMore {
+            margin: 0;
+        }
+        .timelineCommentAvatar {
+            display: none !important;
+        }
+        .timelineComment.timelineCaption {
+            padding: 8px 8px 8px 12px;
+        }
+    }
+    @media not all, not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        .timelineLikeButton, .timelineBookmarkLocation {
+            background-image: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/feed/feed-assets@2x.png");
+            background-size: 100px 1000px;
+        }
+        .timelineComments .scrollArea {
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+    .timelineBookmark {
+        font-weight: 700;
+        line-height: 16px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+    .timelineBookmarkInfoTimestamp, .timelineBookmarkLocation {
+        color: #999;
+    }
+    .timelineCommentUsername {
+        font-weight: 700;
+    }
+    .timelineCommentMore .timelineCommentText {
+        color: #999;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .timelineCommentMore .timelineCommentText:hover {
+        text-decoration: none;
+    }
+    .timelineCommentSpinner {
+        margin-left: -34px;
+        margin-right: 14px;
+    }
+    .timelineLoading {
+        color: #999;
+    }
+    .timelineLoadingSpinner {
+        display: inline-block;
+        height: 16px;
+        vertical-align: middle;
+        width: 16px;
+    }
+    .timelineCommentSpinner {
+        display: inline-block;
+        height: 16px;
+        left: 2px;
+        position: absolute;
+        top: 1px;
+        width: 16px;
+    }
+    .timelineLoadingSpinner {
+        margin: -5px 8px -5px -4px;
+        position: relative;
+        top: -1px;
+    }
+    .timelineTopPaginate {
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: 1px 0 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        font-weight: 700;
+        left: 0;
+        padding-bottom: 8px;
+        position: fixed;
+        right: 0;
+        text-shadow: 0 1px 0 #fff;
+        top: 0;
+        transition: all 0.2s ease 0s;
+        z-index: 3;
+    }
+    .timelineTopPaginate:hover {
+        text-decoration: none;
+    }
+    .timelineTopPaginate, .timelineTopPaginate:hover {
+        color: #999;
+    }
+    .timelineTopPaginate.timelineTopShowing {
+        padding-top: 52px;
+    }
+    .timelineDivider {
+        height: 24px;
+        margin: -4px 1px;
+        position: relative;
+    }
+    .timelineDividerLine {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid #bbb;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+    .timelineDividerText {
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/shared/noise-2.png") repeat scroll 0 0 #e0e1e2;
+        color: #999;
+        display: inline-block;
+        font-weight: 700;
+        line-height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+    .timelineFeedPage {
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/shared/noise-2.png") repeat scroll 0 0 #edeeef;
+    }
+    .timelineFeedPage .top-bar {
+        position: fixed;
+        width: 100%;
+    }
+    .timelineFeedPage .main .wrapper {
+        max-width: 1024px;
+        padding: 43px 0 52px;
+        text-align: center;
+    }
+    .timelineFeedPage .page-footer {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        border: medium none;
+    }
+    .timelineLikeButtonAnimation {
+        background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/p/glyph-heart-pop.png") no-repeat scroll 50% 50% / 40px 40px rgba(0, 0, 0, 0);
+        display: block;
+        height: 100%;
+        left: -1px;
+        opacity: 0;
+        pointer-events: none;
+        position: relative;
+        top: 1px;
+        width: 100%;
+        z-index: 5;
+    }
+    .i-like-pop {
+        animation: 0.3s ease-out 0s normal none 1 running like-pop;
+    }
+
+element.style {
+    height: 152px;
+}
+.scrollArea.scrollAreaOpen {
+    overflow-y: auto;
+}
+.scrollAreaInitialized {
+    transition: height 0.5s ease-out 0s;
+}
+.scrollArea {
+    overflow: hidden;
+    position: relative;
+}
+.scrollAreaContents {
+    padding: 12px 0 0;
+}
+
+.timelineComment {
+    text-overflow: ellipsis;
+    transition: opacity 0.2s ease 0s;
+}
+.timelineComment, .timelineCommentMore {
+    padding: 0 11px 0 48px;
+}
+.timelineComment {
+    margin: 0 0 12px;
+}
+.timelineComment, .timelineCommentMore, .timelineCommentComposer {
+    position: relative;
+}
+.lt-ie9 .Video:before, .Video:before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.Video {
+    position: relative;
+}
+
+.video-js {
+    z-index: 0;
+}
+.video-js, .vCoverLayer, .vStates {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.video-js {
+    background-color: #000;
+    font-size: 10px;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.vStates {
+    z-index: 1;
+}
+.video-js, .vCoverLayer, .vStates {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.video-js .vjs-tech {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+.vjs-poster {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.video-js .vjs-text-track-display {
+    bottom: 4em;
+    font-family: Arial,sans-serif;
+    left: 1em;
+    position: absolute;
+    right: 1em;
+    text-align: center;
+}
+
+.vOffsetIndicator .vStatePlay, .vOffsetIndicator .vStatePause, .vOffsetIndicator .vStatePrebuffer, .vOffsetIndicator .vStateBuffering, .vOffsetIndicator .vStateSound, .vOffsetIndicator .vStateMuted {
+    background-position: -17px -15px;
+    background-size: 190px 300px;
+    height: 36px;
+    left: auto;
+    margin: 0;
+    right: 16px;
+    top: 16px;
+    width: 38px;
+}
+.Video:hover .vStatePlay, .Video:hover .vStatePause, .Video:hover .vStatePrebuffer, .Video:hover .vStateBuffering, .Video:hover .vStateSound, .Video:hover .vStateMuted, .vStatesShow .vStatePlay, .vStatesShow .vStatePause, .vStatesShow .vStatePrebuffer, .vStatesShow .vStateBuffering, .vStatesShow .vStateSound, .vStatesShow .vStateMuted {
+    opacity: 1;
+}
+.vStatePlay, .vStatePause, .vStatePrebuffer, .vStateBuffering {
+    height: 135px;
+    left: 50%;
+    margin-left: -67px;
+    margin-top: -67px;
+    top: 50%;
+    width: 135px;
+}
+.vStatePlay, .vStatePause, .vStatePrebuffer, .vStateBuffering, .vStateSound, .vStateMuted {
+    background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/frame/vesper-frame-assets.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.2s ease-out 0.1s;
+}
+
+.Video .vStateSound {
+    background-position: -29px -389px;
+}
+.vOffsetIndicator .vStatePlay, .vOffsetIndicator .vStatePause, .vOffsetIndicator .vStatePrebuffer, .vOffsetIndicator .vStateBuffering, .vOffsetIndicator .vStateSound, .vOffsetIndicator .vStateMuted {
+    background-position: -17px -15px;
+    background-size: 190px 300px;
+    height: 36px;
+    left: auto;
+    margin: 0;
+    right: 16px;
+    top: 16px;
+    width: 38px;
+}
+.Video:hover .vStatePlay, .Video:hover .vStatePause, .Video:hover .vStatePrebuffer, .Video:hover .vStateBuffering, .Video:hover .vStateSound, .Video:hover .vStateMuted, .vStatesShow .vStatePlay, .vStatesShow .vStatePause, .vStatesShow .vStatePrebuffer, .vStatesShow .vStateBuffering, .vStatesShow .vStateSound, .vStatesShow .vStateMuted {
+    opacity: 1;
+}
+.vStateSound, .vStateMuted {
+    bottom: 11px;
+    display: none;
+    height: 48px;
+    left: 11px;
+    width: 48px;
+}
+.vStatePlay, .vStatePause, .vStatePrebuffer, .vStateBuffering, .vStateSound, .vStateMuted {
+    background: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ab9cf6a/images/frame/vesper-frame-assets.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.2s ease-out 0.1s;
+}
+</style>
+<div class="timelineItem">
+    <div class="timelineSidebar">
+        <div class="timelineBookmark">
+            <div class="timelineBookmarkFirstRow">
+                <div class="timelineBookmarkInfo">
+                    <a href="/mumbaiindians/" class="timelineBookmarkInfoUsername">mumbaiindians</a>
+                    <span data-timestamp-short="13m" class="timelineBookmarkInfoTimestamp">
+                        <span class="timelineBookmarkInfoTimestampContent">13 minutes ago</span>
+                    </span>
+                </div>
+                <a href="/mumbaiindians/">
+                    <div class="timelineBookmarkAvatar Image" src="http://scontent-a.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/10919677_320432231486919_1862690925_n.jpg">
+                        <div style="background-image:url('http://scontent-a.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/10919677_320432231486919_1862690925_n.jpg');" class="iImage">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<div class="timelineCenter">
+        <div class="timelineCard">
+
+            <div class="mediaPhoto">
+                <span class="i-like-big"></span>
+                <div class="mpFrame Frame Image" src="http://photos-e.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10895446_1410355905924460_27846050_n.jpg">
+                    <div style="background-image: url(&quot;http://photos-e.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10895446_1410355905924460_27846050_n.jpg&quot;);" class="iImage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timelineLikes">
+                <a class="timelineLikeButton" title="Toggle like" href="javascript:;">
+                    <span class="timelineLikeButtonAnimation"></span>
+                </a>
+                <div class="mediaMoreButtonContainer">
+                    <a role="button" title="More" href="javascript:;" class="mediaMoreButton" aria-haspopup="true"> </a>
+                </div>
+                <div class="timelineLikeList">
+                    <a href="/felix.rodrigues.19.02.96/" class="llNameLink">felix.rodrigues.19.02.96</a>
+                </div>
+            </div>
+
+            <div class="timelineComments">
+                <div class="timelineComment timelineCaption">
+                    <a href="/mumbaiindians/">
+                        <div class="timelineCommentAvatar Image" src="https://instagramimages-a.akamaihd.net/profiles/profile_488476647_75sq_1375868893.jpg">
+                            <div style="background-image:url(https://instagramimages-a.akamaihd.net/profiles/profile_488476647_75sq_1375868893.jpg);" class="iImage">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/mumbaiindians/" class="timelineCommentUsername">mumbaiindians</a>
+                    <span class="timelineCommentText">
+                        <span>That hip moment and bat speed while playing that shot comes from the Caribbean! Guess the batsman Paltan! </span>
+                        <br>
+                        <span>#MumbaiIndians</span>
+                        <span> </span>
+                        <span>#Mumbai</span>
+                        <span> </span>
+                    </span>
+                    <a class="delete-comment"></a>
+                </div>
+
+                <div class="scrollArea scrollAreaOpen scrollAreaInitialized">
+                    <div class="scrollAreaContents">
+                        <div class="timelineComment">
+                            <a href="/shahnazshariff/">
+                                <div class="timelineCommentAvatar Image" src="https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10895069_1526066227667533_1283988584_a.jpg">
+                                    <div style="background-image:url(https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10895069_1526066227667533_1283988584_a.jpg);" class="iImage">
+                                     </div>
+                                </div>
+                            </a>
+                            <a href="/shahnazshariff/" class="timelineCommentUsername">shahnazshariff</a>
+                            <span class="timelineCommentText">
+                                <a href="/originalgangstermira/">@originalgangstermira</a>
+                                <span > </span>
+                                <a href="/rathnadev/">@rathnadev</a>
+                                <span> oh god :o</span>
+                            </span>
+                            <a class="delete-comment"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timelineCommentComposer">
+                    <div class="timelineCommentAvatar Image" style="width:24px;height:24px;">
+                        <div style="background-image:url(undefined);" class="iImage"></div>
+                    </div>
+                    <div class="timelineCommentText">
+                        <form class="timelineCommentForm">
+                            <input type="text" class="fadedTextField timelineCommentTextField" placeholder="Write a comment..."></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<video width="700" height="400">
+		<source src="http://videos-f-19.ak.instagram.com/hphotos-ak-xaf1/t50.2886-16/10941210_638904542887799_793450303_n.mp4" type="video/mp4">
+		<source src="movie.webm" type="video/webm">
+	</video>

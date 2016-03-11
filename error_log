@@ -1,0 +1,49 @@
+[16-Feb-2016 00:05:18 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[17-Feb-2016 19:29:14 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[17-Feb-2016 21:34:48 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[19-Feb-2016 13:41:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users//media/recent - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(153): Instagram->_makeCall('users//media/re...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/html/insta_userfeeds.php(12): Instagram->getUserMedia(NULL)
+#2 /home/wwwwhatsdadilly/public_html/betaPhase/insta_userfeeds.php(32): include('/home/wwwwhatsd...')
+#3 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[19-Feb-2016 14:34:44 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[21-Feb-2016 09:42:27 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[21-Feb-2016 10:16:51 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[22-Feb-2016 12:34:02 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[22-Feb-2016 13:08:38 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[22-Feb-2016 13:13:10 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[24-Feb-2016 11:32:27 America/Chicago] PHP Fatal error:  Cannot redeclare class Functions in /home/wwwwhatsdadilly/public_html/betaPhase/html/wall/functions.php on line 3
+[24-Feb-2016 11:36:26 America/Chicago] PHP Fatal error:  Cannot redeclare class Functions in /home/wwwwhatsdadilly/public_html/betaPhase/html/wall/functions.php on line 3
+[24-Feb-2016 11:40:04 America/Chicago] PHP Fatal error:  Cannot redeclare class Functions in /home/wwwwhatsdadilly/public_html/betaPhase/html/wall/functions.php on line 3
+[24-Feb-2016 11:40:26 America/Chicago] PHP Fatal error:  Cannot redeclare class Functions in /home/wwwwhatsdadilly/public_html/betaPhase/html/wall/functions.php on line 3
+[24-Feb-2016 11:43:51 America/Chicago] PHP Fatal error:  Cannot redeclare class Functions in /home/wwwwhatsdadilly/public_html/betaPhase/html/wall/functions.php on line 3
+[24-Feb-2016 12:06:18 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users//media/recent - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(153): Instagram->_makeCall('users//media/re...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/html/insta_userfeeds.php(12): Instagram->getUserMedia(NULL)
+#2 /home/wwwwhatsdadilly/public_html/betaPhase/insta_userfeeds.php(32): include('/home/wwwwhatsd...')
+#3 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[24-Feb-2016 13:38:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users//media/recent - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(153): Instagram->_makeCall('users//media/re...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/html/insta_userfeeds.php(12): Instagram->getUserMedia(NULL)
+#2 /home/wwwwhatsdadilly/public_html/betaPhase/insta_userfeeds.php(32): include('/home/wwwwhatsd...')
+#3 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[25-Feb-2016 01:20:35 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[25-Feb-2016 22:05:53 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[01-Mar-2016 12:12:28 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[01-Mar-2016 12:14:19 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 3
+[03-Mar-2016 01:48:56 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:49:32 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:50:20 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:51:17 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:51:53 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:52:44 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:54:22 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:55:27 America/Chicago] PHP Warning:  require_once(../model/Notification.php): failed to open stream: No such file or directory in /home/wwwwhatsdadilly/public_html/betaPhase/html/header.php on line 2
+[03-Mar-2016 01:56:53 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2
+[03-Mar-2016 01:56:56 America/Chicago] PHP Fatal error:  Call to a member function getSession() on a non-object in /home/wwwwhatsdadilly/public_html/betaPhase/html/executeNotification.php on line 2

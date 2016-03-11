@@ -1,0 +1,15 @@
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                            http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Work" table="work">
+        <id name="work_id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+
+        <field name="company" type="string" />
+        <field name="user_id" type="integer" />
+    </entity>
+</doctrine-mapping>

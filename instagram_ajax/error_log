@@ -1,0 +1,786 @@
+[15-Dec-2015 17:47:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() - cURL error: Couldn't resolve host 'api.instagram.com'' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:470
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(109): Instagram->_makeCall('users/search', false, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/insta_profile.php(17): Instagram->searchUser('ladykp', 1)
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 470
+[30-Dec-2015 02:45:37 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1151227894374001747_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115122789437400...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[30-Dec-2015 04:46:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1151227894374001747_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115122789437400...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[30-Dec-2015 06:47:20 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1151227894374001747_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115122789437400...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[01-Jan-2016 02:33:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 14:54:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 14:54:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 16:55:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 18:56:29 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 20:56:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:54:36 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:55:07 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:55:39 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:56:11 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:56:43 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:57:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:57:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:58:20 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:58:51 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 22:59:31 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 23:00:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 23:00:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 23:01:07 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[05-Jan-2016 23:01:37 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1155929382354611944_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115592938235461...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:56:18 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:56:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:57:20 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:57:51 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:58:23 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:58:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:59:26 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 08:59:59 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 09:28:00 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 09:28:31 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 09:29:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 12:22:50 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 12:23:28 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 12:24:05 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 12:24:47 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[07-Jan-2016 12:28:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=undefined - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, 'undefined')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 06:16:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 08:17:39 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 10:18:06 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 12:19:36 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 14:20:04 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 14:20:37 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 16:21:10 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:23:56 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:24:34 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:25:07 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:25:39 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:26:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:26:44 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:27:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:27:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:28:31 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:29:04 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:29:37 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:30:11 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:30:42 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:31:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:31:54 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:32:32 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:33:06 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:33:38 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:34:10 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:34:44 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:35:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[09-Jan-2016 17:35:48 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1158511863654182626_17978002 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '115851186365418...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 08:24:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:25:16 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:25:48 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:26:30 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:27:01 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:27:32 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:28:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:28:34 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:29:05 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:29:36 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:30:07 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:30:38 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:31:09 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:31:40 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:32:11 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:32:42 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[13-Jan-2016 10:33:13 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1161492790160441183_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116149279016044...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 13:41:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() - cURL error: Unknown SSL protocol error in connection to api.instagram.com:443 ' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:470
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, '1615843137.5b61...', '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 470
+[14-Jan-2016 19:13:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:14:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:14:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:15:28 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:16:05 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:16:37 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:17:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:17:44 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:18:16 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:18:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:19:31 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:20:01 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:20:41 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:21:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:21:45 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:22:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:22:58 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:23:32 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 19:24:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 21:11:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:06:23 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:06:38 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load_new.php(16): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:06:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:07:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:07:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:08:26 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:08:57 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:09:28 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:10:00 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:10:30 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:11:01 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:11:32 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:12:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:12:34 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:13:05 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:13:36 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[14-Jan-2016 23:14:08 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1162386998829068311_1011483915 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '116238699882906...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[25-Jan-2016 14:59:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() - cURL error: Failed to connect to api.instagram.com port 443: Connection refused' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:470
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, '1615843137.5b61...', '117049936215700...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 470
+[30-Jan-2016 10:24:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1173768709457624611_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '117376870945762...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[30-Jan-2016 10:32:43 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1173768709457624611_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '117376870945762...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[30-Jan-2016 11:03:25 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1173768709457624611_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '117376870945762...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[30-Jan-2016 11:03:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1173768709457624611_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '117376870945762...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[30-Jan-2016 11:13:28 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1173768709457624611_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '117376870945762...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444
+[30-Jan-2016 11:14:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: _makeCall() | users/self/feed?access_token=&count=0&min_id=1173768709457624611_21193118 - This method requires an authenticated users access token.' in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php:444
+Stack trace:
+#0 /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php(142): Instagram->_makeCall('users/self/feed...', true, Array)
+#1 /home/wwwwhatsdadilly/public_html/betaPhase/instagram_ajax/IGnewpost_load.php(17): Instagram->getUserMoreFeeds(20, NULL, '117376870945762...')
+#2 {main}
+  thrown in /home/wwwwhatsdadilly/public_html/betaPhase/instagramoauth/instagram.class.php on line 444

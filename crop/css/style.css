@@ -1,0 +1,153 @@
+body{
+	margin:0px;
+	font-family:arial,verdana,tahoma;
+	font-size:12px;
+}
+
+h1{
+	font-size:24px;
+	font-weight:bold;
+}
+
+h2{
+	font-size:18px;
+	font-weight:bold;
+}
+
+h3{
+	font-size:16px;
+	font-weight:bold;
+}
+
+h4{
+	font-size:14px;
+	font-weight:bold;
+}
+
+h5{
+	font-size:12px;
+	font-weight:bold;
+}
+
+#main_header{
+	width:100%;
+	height:140px;
+	margin:auto;
+	background:url(images/header_bg.gif) repeat-x;
+	border-bottom:10px solid #2F6692;
+}
+#header{
+	width:960px;
+	height:150px; 
+	margin:auto;
+}
+
+#logo{
+	float:left;
+	padding:55px 0px 20px 20px;
+	color:#FAFAFA;
+}
+
+
+#footer{
+	width:100%;
+	height:90px;
+	margin: auto;
+	background:url(images/footer_bg.gif);
+}
+#footer_nav{
+	margin:auto;
+	color:#fff;
+	width:37%;
+	padding-top:40px;
+}
+#footer_nav a{
+	color:#FAFAFA;
+	text-decoration:none;
+}
+#footer_nav a:hover{
+	text-decoration:underline;
+}
+#wrapper{
+	border: 2px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px auto;
+    min-height: 370px;
+    padding: 10px;
+    width: 972px;
+}
+
+#blueblock {
+    background-color: #C6C9CC;
+    border-right: 1px solid #084678;
+    color: #333333;
+    font-family: arial;
+    font-size: 12px;
+    width: 155px;
+}
+
+
+#blueblock ul {
+    border: medium none;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#blueblock li {
+    border-bottom: 1px solid #3676A8;
+    margin: 0;
+}
+
+#blueblock li a {
+    background-color: #2E6590;
+    border-left: 10px solid #13558C;
+    border-right: 10px solid #4089C5;
+    color: #FFFFFF;
+    display: block;
+    padding: 8px 5px 8px 8px;
+    text-decoration: none;
+    width: 100%;
+}
+#blueblock li a {
+    width: auto;
+}
+
+#blueblock li a:hover {
+    background-color: #3E79A7;
+    border-left: 10px solid #20659E;
+    border-right: 10px solid #4F97D2;
+    color: #FFFFFF;
+}
+
+#menu_bottom {
+    background-color: #13558C;
+    border-radius: 0 0 3px 3px;
+    border-right: 1px solid #000000;
+    height: 12px;
+    margin-top: -1px;
+    width: 155px;
+}
+#menu_header {
+    background: url("images/vermenu_head.png") repeat-x scroll 0 0 transparent;
+    border-radius: 4px 4px 0px 0px;
+    color: #E1DDDD;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    margin-bottom: 4px;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: 152px;
+}
+
+#profile_pic{
+	width:155px;border:1px solid #ccc;border-radius:4px;height:190px;padding:2px;overflow:hidden;
+}
+
+.file_field{
+	margin:0 auto; border:1px dashed #2396BC;padding:10px; width:400px;border-radius:3px;
+}
+.error{
+	width:400;padding:10px;margin:auto;border:1px solid #970F0F;border-radius:4px;background-color:#BA2222;color:#fff;
+}

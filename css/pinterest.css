@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+    background-color:#F7F5F5;
+    font-family: 'helvetica neue', arial, sans-serif;
+    color: #211922;
+}
+#container{
+    margin:0 auto;
+    margin-top:0px;
+
+}
+.description{
+    padding:10px;
+}
+.convo{
+    margin: 0 2px;
+    padding: 10px 15px;
+    background-color: #F2F0F0;
+    color: #8C7E7E;
+    border-radius: 6px 6px 6px 6px;
+}
+.convo img {
+    width: 30px;
+    height: 30px;
+    float:left;
+    margin-right:5px;
+}
+.convo p a{
+    color: #8C7E7E;
+    font-weight:bold;
+}
+
+.masonry,
+.masonry .masonry-brick {
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -ms-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+.masonry {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+    -webkit-transition-property: left, right, top;
+    -moz-transition-property: left, right, top;
+    -ms-transition-property: left, right, top;
+    -o-transition-property: left, right, top;
+    transition-property: left, right, top;
+}
+
+.post .post_controls .post_control:first-child {
+    margin-left: 0;
+}
+.reblog_count {
+    background-color: rgba(130, 139, 152, 0.65);
+    border-radius: 2px 2px 2px 2px;
+    line-height: 18px;
+    opacity: 1 !important;
+    padding: 0 5px 1px;
+    text-align: center;
+}
+#tiles li:hover{
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px 4px #595959;
+}
+.profile-dec{
+    border: 0px solid;
+}
+.post_controls .reblog_button{
+    background-position:-498px -270px;
+    height:20px;
+    width:24px;
+}
+.post_controls .post_control_icon{
+    background-image:url("images/dashboard_master_sprite.png?17");
+    background-repeat:no-repeat;
+    display: inline-block;
+    text-indent:-9999px;
+    overflow: hidden;
+}
+.post_controls .like_button{
+    background-position:-500px -214px;
+    height:19px;
+    width:19px;
+}
+.post_controls{
+
+    -moz-user-select:none;
+    float: right;
+    margin-left: 15px;
+    margin-top: -2px;
+    position: relative;
+    white-space: nowrap;
+}
+.post_controls .reblog_count{
+    background-color: rgba(130, 139, 152, 0.65);
+    border-radius:2px 2px 2px 2px;
+    line-height: 18px;
+    opacity:1 !important;
+    padding: 0 5px 1px;
+    text-align: center;
+}

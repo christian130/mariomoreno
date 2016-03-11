@@ -1,0 +1,336 @@
+<?php
+//require_once 'file:///C|/Users/Pankaj/AppData/Local/Temp/model/Notification.php';
+//require_once 'file:///C|/Users/Pankaj/AppData/Local/Temp/model/Friends.php';
+include 'file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/executeNotification.php';
+?>
+<script type="text/javascript" src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/js/jquery.validate.js"></script>
+<!--<script type="text/javascript" src="js/jquery.crypt.js"></script>-->
+<link rel="stylesheet" href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/css/style.css" type="text/css" />
+<link rel="stylesheet" href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/css/notification-bar.css" type="text/css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/css/responsive.css" type="text/css" />
+
+
+<style>
+    .infomenu li a:hover
+    {
+    }
+
+
+    .active {
+
+        color:#fff !important;
+    }
+    .beeperNub
+    {
+
+        background-image: url('https://fbstatic-a.akamaihd.net/rsrc.php/v2/yp/r/7JuI99HGK-f.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: -26px -167px;
+        left: auto;
+        position: absolute;
+        top:-30px;
+    }
+
+</style>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('.infomenu li a i.fa').on('click', changeClass);
+
+
+    });
+
+
+
+
+    function changeClass() {
+        $('.infomenu li a i.fa').removeClass('active');
+        $(this).toggleClass('active');
+
+
+    }
+
+
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+	
+        $(".first").click(function(){
+            $( ".notify" ).replaceWith( " " );
+	  
+	   
+        });
+	   
+        $("#AuthForm_log").validate({
+            rules: {
+                login_username:{
+                    required:true,
+                    email:true
+                },
+                login_password:{
+                    required:true
+                }
+            },
+            messages: {
+                login_username:{
+                    required:"Enter username"
+                },
+                login_password:{
+                    required:"Enter password"
+
+                }
+            }
+        });
+        $('#login_btn').click( function() {
+            if($("#AuthForm_log").valid()){
+                $( "#AuthForm_log" ).submit();
+            }
+           
+            
+        });
+    });
+</script>
+
+<?php
+require_once "file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/bootstrap.php";
+require_once 'file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/model/Signup.php';
+require_once 'file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/classes/Session.class.php';
+$session = new Session();
+
+if ($session->getSession("userid") == '') {
+?>
+    <div id="login_topblack">
+        <div class="topinner">
+            <div id="login_logo"><a href=""><img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/logo.png" alt="WHATSDADILLY" width="250"/></a></div>
+            <div id="header_login">
+                <form id="AuthForm_log" class="Form FancyForm AuthForm" action="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/userlogin.php" method="POST">
+                    <div class="header_loginleft">
+                        <input type="text" name="login_username" id="login_username" value="" placeholder="Username">
+                        <div><input type="checkbox" value=""><span>Keep me logged in</span></div>
+                    </div>
+                    <div class="header_loginright">
+                        <input type="password" name="login_password" id="login_password" value="" placeholder="Password">
+                        <span><a href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/forgotpassword.php">Forgot your password?</a></span>
+                    </div>
+                    <div class="header_loginbtn">
+                        <input type="button" value="Login" id="login_btn">
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+<?php
+} else {
+    $data = array(
+        "sign_uid" => $session->getSession("userid")
+    );
+    $activation = Signup::getActivationLink($data, $entityManager);
+
+    $registerdate = $activation[0]['registerdate'];
+?>
+    <script type="text/javascript" src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/js/home_header.js"></script>
+    <script type="text/javascript" src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/js/messages.js"></script>
+<?php if ($activation[0]['registeration_status'] == 'PENDING') {
+ ?>
+        <style type="text/css">
+            #topblack{
+                margin-top: 23px;
+            }
+        </style>
+        <link rel="stylesheet" href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/css/notification-bar.css" type="text/css" />
+        <div class="jquery-bar">
+            <span class="notificationheader">
+                <p class="font-style">&laquo; Verify you email - <a href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/activation.php?action=<?php echo base64_encode('verifymail'); ?>" target="_balnk">Verify you email</a></p>
+                <p class="jquery-arrow down">&laquo; Verify you email - <a href="activation.php?action=<?php echo base64_encode('resendmail'); ?>&url=<?php echo base64_encode("http://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI]); ?>">Resend Activation link</a></p>
+            </span>
+        </div>
+<?php } ?>
+    <div id="topblack">
+        <div class="topinner2">
+            <div id="logo"><a href=""><img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/logo.png" alt="WHATSDADILLY" /></a></div>
+
+            <div class="infomenu">
+                <ul>
+                <?php
+                $result = $notifications->getNotifications($entityManager, $session->getSession('userid'));
+                $messages->updateNotifications($entityManager, $session->getSession('userid'));
+                ?>
+                <li><a href="#" class="first" style="border:none !important;" "><i onClick="changeClass();" class="fa fa-globe fa-2"></i></a> <span class="notify" id="notify"><?php echo $notifications->getNumber() ?> </span>
+
+                    <div class="notification" >
+                        <i class="fa fa-sort-asc fa-2x" style="color:#333;float:left;margin-left:12px;margin-top:-11px;"></i>
+                            <?php echo $result; ?>
+                    </div>    
+                </li>
+                <li class="second"><a href="#" "><i onClick="changeClass();" class="fa fa-weixin"></i></a><div class="message_num"> </div>
+                    <div class="messages" >
+
+                        <i class="fa fa-sort-asc fa-2x" style="color:#333;float:left;margin-left:12px !important;margin-top:-11px !important;"></i>
+
+
+
+                        <div class="messageheader"><h4 style="margin:5px;font-weight:bold;font-size:12px !important;">Inbox(6)</h4> </div>
+                        <div class="messagewrapmain">
+                            <div class="messageswrap">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                            <div class="messageswrap">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="messageswrap">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="messageswrap">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="messageswrap">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="messageswrap">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                            <div class="messageswrap">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="messageswrap nobg">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/dr1.jpg" alt="" class="dimg" /></td>
+                                        <td><h4 style="font-weight:bold;margin:0px;font-size:12px !important;">Message!</h4>
+                                            <p style="color:#ccc;">Wants to add you as a friend</p></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </div>
+                        <div class="messagefooter"><h4 style="margin:5px;text-align:center;font-weight:bold;font-size:12px !important;">See all</h4> </div>
+
+
+                    </div>
+                </li>
+<?php $result = $messages->getFriendsRequest($entityManager, $session->getSession('userid')); ?>
+                <li class="third" style="border:none !important;"><a href="#" "><i onClick="changeClass();" class="fa fa-users"></i> </a><div class="friends_num"> <?php echo $messages->getNumberRequest() ?></div>
+                    <!--toggle -->
+                    <div class="frienddropwrap" id="friend_requ">
+                        <i class="fa fa-sort-asc fa-2x" style="color:#333;float:left;margin-left:12px;margin-top:-11px;"></i>
+
+                        <div class="messageheader"><h4 style="float:left;margin:5px;font-weight:bold;font-size:12px !important;">Friend requests</h4>
+                            <h4 style="margin:5px;float:right;font-weight:bold;font-size:12px !important;">Invite friends</h4></div>
+                        <Div class="friends_request">
+
+<?php echo $result; ?>
+                        </Div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="searchwrap">
+            <input type="text" class="searchinput" id="searchinput" />
+            <input type="image" src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/search.png" />
+            <div class="results">
+                <ul id="resultdiv">
+
+                </ul>
+
+            </div>
+        </div>
+        <?php
+                // echo "cnt".count($session->getSession("profile_pic"));
+        ?>
+                <div class="homhicon"><a href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/home.php"><img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/homicon.png" alt="" /></a></div>
+                <div class="smicons">
+                    <a href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/profile.php?profileid=<?php echo base64_encode($_SESSION['userid']); ?>">
+                <?php if (count($session->getSession("profile_pic")) != 0) { ?>
+                    <img src="uploads/<?php echo $session->getSession("profile_pic"); ?>" alt="" width="40px;" height="35px;" style="border-radius:4px; "/>
+                <?php
+                } else {
+                    if ($session->getSession("gender") == 'Male') {
+                ?>
+                        <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/uploads/default/Maledefault.png" alt="" width="40px;" height="35px;" style="border-radius:4px; "/>
+                <?php } else {
+ ?>
+                        <img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/uploads/default/female.jpg" alt="" width="40px;" height="35px;" style="border-radius:4px; "/>
+                <?php }
+                } ?>
+            </a>
+        </div>
+        <span class="jessic"><?php echo ucfirst($session->getSession("firstname")); ?> <br><?php echo ucfirst($session->getSession("lastname")); ?></span>
+        <div class="setting"><a href="#"><img src="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/images/setting.png" /></a>
+            <ul class="settings">
+                <a href="#"><li>Privacy</li></a>
+                <a href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/settings.php"><li>Setting</li></a>
+                <a href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/accounts.php" ><li class="">List Accounts</li></a>
+                <a href="file:///C|/Users/Pankaj/AppData/Local/Temp/fz3temp-1/logout.php" ><li class="">Logout</li></a>
+            </ul>
+        </div>
+        <div id="notification_popup" style="background:gray;width:200px;height:100px;display:none;">
+        </div>
+    </div>
+</div>
+<?php } ?>

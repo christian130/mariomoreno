@@ -1,0 +1,62 @@
+.jquery-bar {
+	background: #FFFFFF; /* #FAFAFA */
+	width:101.40%;
+	position: fixed;
+	margin:0px 0px 0px -5px;
+	padding: 0px 0px 0px 0px;
+	border-bottom:2px solid #CC0000;
+	box-shadow: 0px 4px 5px #AAAAAA;
+	font-size:14px;
+	font-family: 'Lato Regular', Arial;
+	text-transform:uppercase;
+        z-index: 1;
+}
+
+.jquery-bar notificationheader {
+	display:block;
+	width:auto;
+}
+
+.downbar {
+	cursor:pointer;	
+	top:0px;
+	right:70px;	
+	padding:0px 3px 0px 3px;
+	position:absolute;
+	background:#FFFFFF;
+	border-radius:0px 0px 5px 5px;	
+	border:2px solid #CC0000;
+	box-shadow: 0px 4px 5px #AAAAAA;	
+	border-top:none;
+}
+
+.downbar:hover{
+	background: url(../jix/bg.png);
+	cursor:pointer;
+}
+
+.down {
+	position:absolute;
+	top:3px;
+	right:85px;
+}
+
+.up {
+	top: -45px;
+	display: none;
+}
+
+.arrow {
+	cursor:pointer;
+}
+
+.font-style{
+	text-align: center;
+}
+
+.font-style a{
+	color:#CC0000;
+	font-size:15px;
+	text-decoration:underline;
+	text-transform:none;
+}

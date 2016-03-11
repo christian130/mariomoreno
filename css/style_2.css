@@ -1,0 +1,438 @@
+@charset utf-8;
+/*body{font-family:Arial, Helvetica, sans-serif;font-size:12px;background:url(../images/logbg.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}*/
+body{ background:url(../images/logbg.jpg) no-repeat fixed 100% 100%; font-family:Arial, Helvetica, sans-serif; font-size:12px;width:100%;
+         height:100%; }
+.Form label.error {
+color:red;
+}
+.Form input.error {
+border:1px solid red;
+}
+.Form select.error {
+border:1px solid red;
+}
+.Form input[type=radio].error{
+    outline: 1px solid red
+}
+.profile_header{
+    float: right;
+    font-size: 17px;
+    width: 200px;
+}
+img#uploadPreview{
+		border: 0;
+		border-radius: 3px;
+		-webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+		box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+		margin-bottom: 30px;
+		overflow: hidden;
+                width:100%;
+	}
+*focus{outline:none}
+#topblack{background:#000;height:45px}
+.whitebg{background:#ededed}
+#logo{float:left;padding:8px 0 0}
+.amember{color:#fff;float:right;padding:15px 7px 0 0}
+.amember2{font-weight:700;background:url(../images/key.png) no-repeat 0 16px;color:#fff;float:right;padding:15px 0 0 20px}
+a{text-decoration:none}
+a:hover{color:#ff7e29}
+.clear{clear:both}
+.nomarg{margin:0!important}
+.nomargT{margin-top:0!important}
+.nomargR{margin-right:0!important}
+.nomargB{margin-bottom:0!important}
+.nomargL{margin-left:0!important}
+.nopad{padding:0!important}
+.nopadT{padding-top:0!important}
+.nopadR{padding-right:0!important}
+.nopadB{padding-bottom:0!important}
+.nopadL{padding-left:0!important}
+.nobg{background:none!important}
+.nobord{border:none!important}
+.nobordB{border-bottom:none!important}
+.logleft{float:left;width:352px;padding:98px 0 0}
+.logleft h1{background:url(../images/trans.png);font-size:15px;color:#fff;border-radius:3px;font-weight:700;margin:0 15px 8px 0;padding:4px 7px}
+.logleft h2{background:url(../images/trans.png);font-size:15px;color:#fff;font-weight:700;border-radius:3px;margin:0;padding:3px 7px}
+#sicons{float:left;background:url(../images/sicons.png) no-repeat;padding-right:1px;margin:15px 0}
+#sicons li{float:left;margin-right:17px}
+#sicons li a{width:29px;height:29px;float:left;text-indent:-1000em}
+.orngtxt{background:#ff7e29;font-size:15px;color:#fff;clear:both;border-radius:3px;margin:0 0 8px;padding:4px 7px}
+.orngmarg{margin-right:80px}
+.signbgwrap{float:right;width:300px;margin:0 0 0}
+.signbg{background:url(../images/transgray.png);border-radius:8px;padding:0px 15px}
+.signbgwrap h3{font-size:16px;color:#fff;font-weight:700;text-align:center;padding-bottom:10px}
+.locinput{color:#959595;font-size:13px;width:111px;border-radius:3px;border:none;margin:10px 1px 0 0;padding:13px 10px}
+.locinput2{color:#959595;font-size:13px;border-radius:3px;border:none;width:93%;margin:10px 0 0;padding:13px 10px}
+.locinputsel{color:#959595;font-size:13px;border-radius:3px;border:none;width:100%;margin:10px 0 0;padding:13px 10px}
+.signbgwrap h4{font-size:11px;color:#fff;font-weight:700;padding:6px 0 0}
+.locinput3{color:#959595;font-size:13px;width:69px;border-radius:3px;border:none;margin:6px 1px 0 0;padding:10px 6px 10px 12px}
+.gender{padding:10px 0 0}
+.gender label{margin-right:4px;color:#fff}
+.signbgwrap p{font-size:12px;color:#fff;margin:15px 0;padding:7px 0 0}
+.btn_signup{background:#ff7e29;text-transform:uppercase;font-size:16px;color:#fff;width:270px;font-weight:700;border-radius:3px;border:none;margin-top:10px;cursor:pointer;padding:13px 0}
+.logfoot{width:845px;clear:both;margin:0 auto;padding:0px 0 0px}
+.fmenu li{font-size:11px;font-weight:700;color:#fff;float:left;padding:3px 5px 0}
+.toimg{float:left;margin-right:40px}
+.logfoot p{float:left;font-size:11px;font-weight:700;padding-top:5px;color:#fff}
+.infomenu{float:left;background:url(../images/infoicons.png) no-repeat;margin:11px 10px 0 60px}
+.infomenu li{float:left;margin-right:28px}
+.infomenu li a{color:#fff;width:21px;height:21px;float:left;text-indent:-1000em}
+.infomenu .second{margin-right:30px}
+.infomenu .third a{width:31px}
+.searchwrap{float:left;padding-top:8px}
+.searchinput{float:left;background:#2d2c2c;width:220px;height:19px;border-radius:3px 0 0 0;border:none;color:#fff;padding:4px}
+.homhicon{float:left;padding:14px 10px 0}
+.smicons{float:left;padding:8px 3px 0}
+.jessic{color:#fff;float:left;padding:12px 3px 0 7px}
+.setting{float:right;padding:12px 35px}
+.homlft{float:left;width:200px;margin:38px 12px 0 0}
+.hommid{width:514px;float:left;margin-top:38px}
+.wdbg{background:#000 url(../images/bdivid.png) no-repeat right 0;border-radius:2px 0 0 0;color:#fff;font-weight:700;float:left;padding:6px 9px}
+.wdbg2{background:#000;border-radius:0 2px 0 0;color:#fff;font-weight:700;float:left;padding:6px 11px}
+.grybord{border:1px solid #e6e6e6;clear:both;width:492px;color:#aaa;font-size:14px;height:30px;padding:10px}
+.twitbg{float:left;padding:0 0 0 10px}
+.dgry{background:#d8d8d8;border-radius:0 0 0 3px;overflow:hidden;padding:0}
+.postbutton{background:#78c7eb;border-radius:2px;float:right;border:0;text-transform:uppercase;color:#fff;text-align:center;font-size:10px;font-weight:700;width:70px;cursor:pointer;margin:6px 10px 0 0;padding:3px 10px}
+.picon{border-right:1px solid #fff;float:left;padding:8px 10px}
+.bluebg{background:#78c7eb;border-radius:6px 6px 0 0;color:#fff;font-weight:700;clear:both;font-size:14px;margin:20px 0 0;padding:6px 9px}
+.tabgray{background:#d8d8d8;border-radius:0 0 6px 6px;clear:both}
+.homtit{float:left;border-right:1px solid #fff;color:#5e5e5e;font-weight:700;min-height:36px;padding:8px 10px 0}
+.postbg{background:#d8d8d8;border-radius:3px;clear:both;text-align:center;color:#fff;font-weight:700;margin-top:20px;padding:5px 0}
+.peoplebx{float:left;margin:20px 0 0;padding:0 50px}
+/*added by marcel*/
+.pos_3{position: relative;  left:310px; top: -164px;}
+.pos_2{position: relative;  left:155px; top: -82px;}
+.album_style{background-color:#78c7eb;  width: 150px; height: 80px; margin: 3px 2px 3px 5px;  border-radius: 5px; }
+.album_lists img{ width: 30px; height: 30px;}
+.album_lists h4{ background:#78c7eb; color:#fff; width: auto;}
+.album_lists .lines{ height: 80px; }
+.album_lists{ border-color:blue; width: 468px; margin-top: 10px; border:3px solid #e6e6e6; clear:both;text-align:center; }
+.friend_lists img{ width: 80px; height: 80px; border-radius: 3px; border-color: white;}
+.friend_lists h3{ background:#78c7eb; color:#fff; width: auto; }
+.friend_lists .lines{ height: 80px; margin-top: 5px; text-align: left; flex-align: center; border: 1px solid #f0e;}
+.friend_lists{ border:1px solid #e6e6e6; border-color:blue; width: 468px; margin-top: 10px; border:3px solid #e6e6e6; clear:both;text-align:center; }
+
+.album_form{ border-color:blue;  border: 10px; width: 400px;}
+.createAlbum{ background:#78c7eb;border-radius:2px 2px 0 0;color:#fff;text-align:center; width: 272px;}
+.album_form .title{ border:1px solid #e6e6e6;clear:both;width:250px;color:#aaa;font-size:14px;height:30px;padding:10px}
+.album_form .footer{background:#d8d8d8;border-radius:0 0 0 3px;overflow:hidden;padding:0;width:272px;}
+.album_form .postbutton{background:#78c7eb;border-radius:2px;float:right;border:0;text-transform:uppercase;color:#fff;text-align:center;font-size:10px;font-weight:700;width:70px;cursor:pointer;margin:6px 10px 0 0;padding:3px 10px}
+
+.friendsresult{ font-size: 20px; color: white;}
+.peoplebx{float:left;margin:20px 0 0;padding:0 50px}
+.peoplebx img{ height: 30px; width: 30px; border-radius: 2px 2px 2px 2px; border-color: white;}
+.friendwrap{overflow:hidden;padding:2px 0 5px}
+.friendwrap img{float:left;margin:8px 12px 0 0}
+.frienddropwrap{float:left;width:320px;background:#3e3b3b;border-radius:0 0 6px 6px;position:absolute;top:45px;display:none;
+               /*added by marcel*/
+               z-index: 2000;}
+.frienddropwrap h3{font-size:12px;font-weight:700;color:#fff;background:#000;border-radius:0 0 6px 6px;padding:6px 15px}
+.mfrienwrap{background:#262829; width: 300px;height:50px;padding:7px 10px ;}
+.friednamewrap{float:left;width:90px;color:#fff;margin-right:6px}
+.namtitwrap{float:left;width:220px;color:#fff;margin-right:6px}
+.namtitwrap h4{font-size:11px;font-weight:700}
+.namtitwrap p{font-size:10px;line-height:12px;padding:2px 0}
+.confirmbutton{background:#ff7e29;border-radius:1px;float:left;border:0;color:#fff;text-align:center;font-size:10px;font-weight:700;width:60px;cursor:pointer;margin:0px 4px 0 0px;padding:4px 12px}
+.ignorebutton{background:#9e9c9c;border-radius:1px;float: outside;border:0;color:#354552;text-align:center;font-size:10px;font-weight:700;width:60px;cursor:pointer;margin:0px 0 0;padding:4px 12px}
+.frienddropwrap h5{font-size:12px;font-weight:700; width: 290px;color:#fff;background:#000;text-align:center;border-radius:0 0 6px 6px;padding:6px 15px}
+.infomenu .notify { float:left; }
+.notify{  position: relative; top:-10px; left: 5px; font-weight: bold; font-family: lucida grande; color: white; background-color:  red; border-color: red; border-radius: 2px 2px 2px 2px; z-index: 2000; } 
+.notification { border-radius: 0 0 6px 6px; display:none; position: absolute; top: 45px; color: #fff; background:#000;  padding:6px 15px; text-align:center; width: 320px; z-index: 2000; }
+.notificationwrap{ background:#262829; float:left; width:300px; color:#fff; margin-right:6px; padding: 6px 0 0 6px;}
+.notificationwrap h3{ font-size:12px; font-weight:bold; color:#fff; background:#000;  padding:6px 15px;}
+.notification h5{font-size:12px;font-weight:700; width: 300px;color:#fff;background:#000;text-align:center; padding:6px 15px}
+.notification .readAll{font-size:12px;font-weight:700; width: 300px;color:#fff;background:#000; border-radius: 0 0 6px 6px; text-align:center; padding:6px 15px; cursor: pointer;}
+.message_num{  padding:14px 3px 0 0px;  color:#fff; float:left;  position: relative; left: -10px;} 
+.messages{float:left; width:150px; background:#3e3b3b; border-radius: 0 0 6px 6px; position:absolute; top:13%; display:none;  z-index: 2000;}
+.messages .sender{ width: 20px; height: 20px;}
+.messageswrap{ background:#262829; float:left; width:150px; color:#fff; margin-right:6px;  }
+.messageswrap h3{ font-size:12px; font-weight:bold; color:#fff; background:#000;  padding:6px 15px;}
+.friendimg{ height: 72px; height: 72px; border-radius: 3px  3px  3px 3px; border-color: white;}
+.friendrequestimg{ height: 50px; width:  50px; float:left;margin-right:6px}
+.friends_request{ z-index: 2000; width: 315px;}
+.friends_num{    color:red; float:left; position: relative; left: -5px; top:-10px; font-weight: bold; font-family: lucida grande; color: white; background-color:  red; border-color: red; border-radius: 2px 2px 2px 2px;  text-align: center;} 
+/*added by marcel*/
+.jessicatxt{background:url(../images/pplusicon.png) no-repeat 0 2px;color:#5e5e5e;font-family:13px;padding:0 0 0 20px}
+.peopwrap{float:left;padding:5px 0 20px}
+.crispbx{border-top:1px solid #e4e4e4;overflow:hidden;clear:both;padding:15px 0}
+.crispbx img{float:left;margin-right:10px}
+.crispcont{float:left;width:442px}
+.crispcont h2{color:#737373;font-weight:700;font-size:15px}
+.crispcont p{color:#5e5e5e;font-size:13px}
+.likemenu li{font-size:12px;color:#000;float:left;font-weight:700;padding:8px 15px 0 0}
+.likemenu li a{color:#ffa96e}
+.upimgwrap{clear:both;padding:8px 0}
+.upbigimg{padding:4px 0}
+.friendright{float:left;width:222px;padding-left:20px;margin-top:38px}
+.friendright h3{clear:both;color:#000;font-size:17px;font-weight:700}
+.dimg{float:left;margin-right:6px}
+.settings li{border-bottom:2px solid #666;font-size:12px;font-weight:700;color:#fff;background:#000;text-align:center;padding:6px 15px}
+.settings{float:left;width:150px;background:#3e3b3b;position:absolute;top:45px;display:none;right:14%}
+.settings li:hover{background:#3e3b3b;color:#fff;border-bottom:2px solid #999}
+.subheading{color:#343f49;text-align:center;font-size:14px;padding:10px 0}
+.forgotlinks{margin-top:10px}
+.forgotlinks a{color:#fff;margin-right:10px;text-decoration:underline}
+#largebluebtn{border-radius:3px;font-size:14px;color:#fff;text-align:center;background:#2e5b9b;margin-bottom:15px;padding:13px}
+#largebluebtn span{font-weight:700;margin-left:5px}
+#radiobtn{color:#fff;font-weight:700;margin:15px 0 5px}
+#logincontainer,.topinner{width:1000px;margin:0 auto}
+.fmenu,.likemenu{float:left;margin:0 40px 0 0}
+.topinner2,.midwht{width:987px;margin:0 auto;position: absolute;}
+.peopwrap img,.upsmimg img{float:left;margin-right:4px}
+.settings li a,.settings li a:hover{color:#fff;width:140px}
+#whitearea{float:left;background:#fff}
+.compose{margin-bottom:20px;border-radius:5px;background:#ff7f14;width:165px;height:40px}
+.compose a{text-transform:uppercase;font-weight:700;font-size:14px;float:left;color:#fff;padding:12px 50px}
+.inboxlft{float:left;width:220px;margin:38px 10px 0 25px}
+.inboxmid{width:706px;float:left;margin-top:38px}
+ul.mailcontent li{text-transform:capitalize;font-weight:700;font-size:14px;padding:5px 20px}
+ul.mailcontent li a{color:#ededed}
+ul.mailcontent li a.active{color:#ff7f14}
+ul.mailservice li a{width:170px;height:37px;float:left;border-bottom:2px solid #fff;background:#ccc}
+ul.mailcontent{margin-bottom:20px}
+ul.mailservice li img{border-right:1px solid #fff}
+ul.mailservice li span{text-transform:capitalize;color:#fff;font-weight:700;margin-top:10px;font-size:15px;float:right;width:125px}
+.message{font-size:12px;float:left;width:670px;border-bottom:1px dotted #ccc;padding:10px}
+.message .title{font-weight:700;padding:0 10px}
+.unread{background:#f8f8f8}
+#mailtitle{background:#e8e8e8;float:left;width:670px;padding:10px}
+#mailtitle .subject,#mailcontent .subject{float:left;font-size:16px;width:70%;font-weight:700;padding:10px 0}
+#mailtitle .receiveddate,#mailcontent .receiveddate{width:25%;float:left;padding:12px 0}
+#mailtitle .content,#mailcontent .content{width:100%;float:left;line-height:2em;font-size:14px}
+#mailcontent{border-bottom:1px solid #e8e8e8;float:left;width:670px;margin-top:15px;padding:10px}
+#mailreply{margin-top:20px;width:670px;float:left;border:1px solid #e8e8e8}
+#mailreply .subject{border-bottom:1px solid #e8e8e8;padding:15px}
+#mailreply select{background:none;border:none;padding:5px}
+#mailreply .replymail{float:left;width:100%;border-bottom:1px solid #e8e8e8}
+#mailreply .mailtext textarea{border:none;color:#999;float:left;width:100%;height:300px}
+#mailreply .submit{width:100%;float:left;border-top:1px solid #e8e8e8;background:#e8e8e8;padding:10px 0}
+input.mailid{border:1px solid #fff;height:45px;width:550px}
+.orangebutton{text-transform:uppercase;font-weight:700;cursor:pointer;color:#fff;border-radius:5px;border:none;background:#ff7f14;margin-left:20px;width:100px;padding:10px}
+span.maildel{float:right;margin-right:20px;padding-top:7px}
+.submit .add,.submit .att{padding:10px}
+#popup{width:550px;font-size:16px;margin:0 auto}
+#popup .topband{background:#e8e8e8;border-top-right-radius:5px;border-top-left-radius:5px;height:55px}
+#popup .bottomband{background:#e8e8e8;border-bottom-right-radius:5px;border-bottom-left-radius:5px;height:30px;padding:25px 0}
+#popup .innerband input{border:0;padding-left:11px;border-bottom:1px solid #e8e8e8;height:60px;width:98%}
+#popup .innerband textarea{border:0;color:#999;height:320px;width:100%}
+#popup .google{float:left;padding:10px}
+#popup .close{float:right;padding:10px}
+#header_login{width:570px;float:right;margin:10px}
+.header_loginleft{width:210px;float:left}
+.header_loginright{float:left;width:200px}
+#login_username,#login_password{border:1px solid #3a518a;border-radius:4px 4px 4px 4px;-webkit-border-radius:3px;width:166px;padding:5px 8px}
+.header_loginright span,.header_loginleft div{float:left;margin:10px 0}
+.header_loginleft span{padding-left:10px}
+#login_topblack{background:#000;height:70px;color:#fff;width:100%;}
+#login_btn{border-radius:3px;background:0;border:1px solid #1d3871;background: #1d3871;-webkit-border-radius:3px;-webkit-box-shadow:0 1px 0 #6f85b3 inset, 0 1px 1px rgba(0,0,0,.18);color:#fff;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:700;cursor:pointer;line-height:25px;height:25px;width:95px;padding:0}
+#login_logo{float:left;padding:20px 0 0}
+.thankyou{margin-top:200px;color:#fff;font-weight:700;font-size:18px;background:url(../images/transgray.png);border-radius:8px;text-align:center;padding:30px 15px}
+.amember2 a,.fmenu li a,.header_loginright span a{color:#fff}
+.signup2{margin-top:94px;color:#fff;font-weight:700;font-size:18px;background:url(../images/transgray.png);border-radius:8px;text-align:center;padding:30px 15px}
+=======
+@charset utf-8;
+/*body{font-family:Arial, Helvetica, sans-serif;font-size:12px;background:url(../images/logbg.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}*/
+body{ background:url(../images/logbg.jpg) no-repeat fixed 100% 100%; font-family:Arial, Helvetica, sans-serif; font-size:12px;width:100%;
+         height:100%; }
+.Form label.error {
+color:red;
+}
+.Form input.error {
+border:1px solid red;
+}
+.Form select.error {
+border:1px solid red;
+}
+.Form input[type=radio].error{
+    outline: 1px solid red
+}
+.profile_header{
+    float: right;
+    font-size: 17px;
+    width: 200px;
+}
+img#uploadPreview{
+		border: 0;
+		border-radius: 3px;
+		-webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+		box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+		margin-bottom: 30px;
+		overflow: hidden;
+                width:100%;
+	}
+*focus{outline:none}
+#topblack{background:#000;height:45px}
+.whitebg{background:#ededed}
+#logo{float:left;padding:8px 0 0}
+.amember{color:#fff;float:right;padding:15px 7px 0 0}
+.amember2{font-weight:700;background:url(../images/key.png) no-repeat 0 16px;color:#fff;float:right;padding:15px 0 0 20px}
+a{text-decoration:none}
+a:hover{color:#ff7e29}
+.clear{clear:both}
+.nomarg{margin:0!important}
+.nomargT{margin-top:0!important}
+.nomargR{margin-right:0!important}
+.nomargB{margin-bottom:0!important}
+.nomargL{margin-left:0!important}
+.nopad{padding:0!important}
+.nopadT{padding-top:0!important}
+.nopadR{padding-right:0!important}
+.nopadB{padding-bottom:0!important}
+.nopadL{padding-left:0!important}
+.nobg{background:none!important;margin:0;}
+.nobord{border:none!important}
+.nobordB{border-bottom:none!important}
+.logleft{float:left;width:352px;padding:98px 0 0}
+.logleft h1{background:url(../images/trans.png);font-size:15px;color:#fff;border-radius:3px;font-weight:700;margin:0 15px 8px 0;padding:4px 7px}
+.logleft h2{background:url(../images/trans.png);font-size:15px;color:#fff;font-weight:700;border-radius:3px;margin:0;padding:3px 7px}
+#sicons{float:left;background:url(../images/sicons.png) no-repeat;padding-right:1px;margin:15px 0}
+#sicons li{float:left;margin-right:17px}
+#sicons li a{width:29px;height:29px;float:left;text-indent:-1000em}
+.orngtxt{background:#ff7e29;font-size:15px;color:#fff;clear:both;border-radius:3px;margin:0 0 8px;padding:4px 7px}
+.orngmarg{margin-right:80px}
+.signbgwrap{float:right;width:300px;margin:0 0 0}
+.signbg{background:url(../images/transgray.png);border-radius:8px;padding:0px 15px}
+.signbgwrap h3{font-size:16px;color:#fff;font-weight:700;text-align:center;padding-bottom:10px}
+.locinput{color:#959595;font-size:13px;width:111px;border-radius:3px;border:none;margin:10px 1px 0 0;padding:13px 10px}
+.locinput2{color:#959595;font-size:13px;border-radius:3px;border:none;width:93%;margin:10px 0 0;padding:13px 10px}
+.locinputsel{color:#959595;font-size:13px;border-radius:3px;border:none;width:100%;margin:10px 0 0;padding:13px 10px}
+.signbgwrap h4{font-size:11px;color:#fff;font-weight:700;padding:6px 0 0}
+.locinput3{color:#959595;font-size:13px;width:69px;border-radius:3px;border:none;margin:6px 1px 0 0;padding:10px 6px 10px 12px}
+.gender{padding:10px 0 0}
+.gender label{margin-right:4px;color:#fff}
+.signbgwrap p{font-size:12px;color:#fff;margin:15px 0;padding:7px 0 0}
+.btn_signup{background:#ff7e29;text-transform:uppercase;font-size:16px;color:#fff;width:270px;font-weight:700;border-radius:3px;border:none;margin-top:10px;cursor:pointer;padding:13px 0}
+.logfoot{width:845px;clear:both;margin:0 auto;padding:0px 0 0px}
+.fmenu li{font-size:11px;font-weight:700;color:#fff;float:left;padding:3px 5px 0}
+.toimg{float:left;margin-right:40px}
+.logfoot p{float:left;font-size:11px;font-weight:700;padding-top:5px;color:#fff}
+.infomenu{float:left;background:url(../images/infoicons.png) no-repeat;margin:11px 10px 0 60px}
+.infomenu li{float:left;margin-right:28px}
+.infomenu li a{color:#fff;width:21px;height:21px;float:left;text-indent:-1000em}
+.infomenu .second{margin-right:30px}
+.infomenu .third a{width:31px}
+.searchwrap{float:left;padding-top:8px}
+.searchinput{float:left;background:#2d2c2c;width:220px;height:19px;border-radius:3px 0 0 0;border:none;color:#fff;padding:4px}
+.homhicon{float:left;padding:14px 10px 0}
+.smicons{float:left;padding:8px 3px 0}
+.jessic{color:#fff;float:left;padding:12px 3px 0 7px}
+.setting{float:right;padding:12px 35px}
+.homlft{float:left;width:200px;margin:38px 12px 0 0}
+.hommid{width:514px;float:left;margin-top:38px}
+.wdbg{background:#000 url(../images/bdivid.png) no-repeat right 0;border-radius:2px 0 0 0;color:#fff;font-weight:700;float:left;padding:6px 9px}
+.wdbg2{background:#000;border-radius:0 2px 0 0;color:#fff;font-weight:700;float:left;padding:6px 4px}
+.grybord{border:1px solid #e6e6e6;clear:both;width:492px;color:#aaa;font-size:14px;height:30px;padding:10px}
+.twitbg{float:left;padding:0 0 0 10px}
+.dgry{background:#d8d8d8;border-radius:0 0 0 3px;overflow:hidden;padding:0}
+.postbutton{background:#78c7eb;border-radius:2px;float:right;border:0;text-transform:uppercase;color:#fff;text-align:center;font-size:10px;font-weight:700;width:70px;cursor:pointer;margin:6px 10px 0 0;padding:3px 10px}
+.picon{border-right:1px solid #fff;float:left;padding:8px 10px}
+.bluebg{background:#78c7eb;border-radius:6px 6px 0 0;color:#fff;font-weight:700;clear:both;font-size:14px;margin:20px 0 0;padding:6px 9px}
+.tabgray{background:#d8d8d8;border-radius:0 0 6px 6px;clear:both}
+.homtit{float:left;border-right:1px solid #fff;color:#5e5e5e;font-weight:700;min-height:36px;padding:8px 10px 0}
+.postbg{background:#d8d8d8;border-radius:3px;clear:both;text-align:center;color:#fff;font-weight:700;margin-top:20px;padding:5px 0}
+.jessicatxt{background:url(../images/pplusicon.png) no-repeat 0 2px;color:#5e5e5e;font-family:13px;padding:0 0 0 20px}
+.peopwrap{float:left;padding:5px 0 20px}
+.crispbx{border-top:1px solid #e4e4e4;overflow:hidden;clear:both;padding:15px 0}
+.crispbx img{float:left;margin-right:10px}
+.crispcont{float:left;width:442px}
+.crispcont h2{color:#737373;font-weight:700;font-size:15px}
+.crispcont p{color:#5e5e5e;font-size:13px}
+.likemenu li{font-size:12px;color:#000;float:left;font-weight:700;padding:8px 15px 0 0}
+.likemenu li a{color:#ffa96e}
+.upimgwrap{clear:both;padding:8px 0}
+.upbigimg{padding:4px 0}
+.friendright{float:left;width:222px;padding-left:20px;margin-top:38px}
+.friendright h3{clear:both;color:#000;font-size:17px;font-weight:700}
+.dimg{float:left;margin-right:6px}
+.settings li{border-bottom:2px solid #666;font-size:12px;font-weight:700;color:#fff;background:#000;text-align:center;padding:6px 15px}
+.settings{float:left;width:150px;background:#3e3b3b;position:absolute;top:45px;display:none;right:14%}
+.settings li:hover{background:#3e3b3b;color:#fff;border-bottom:2px solid #999}
+.subheading{color:#343f49;text-align:center;font-size:14px;padding:10px 0}
+.forgotlinks{margin-top:10px}
+.forgotlinks a{color:#fff;margin-right:10px;text-decoration:underline}
+#largebluebtn{border-radius:3px;font-size:14px;color:#fff;text-align:center;background:#2e5b9b;margin-bottom:15px;padding:13px}
+#largebluebtn span{font-weight:700;margin-left:5px}
+#radiobtn{color:#fff;font-weight:700;margin:15px 0 5px}
+#logincontainer,.topinner{width:1000px;margin:0 auto}
+.fmenu,.likemenu{float:left;margin:0 40px 0 0}
+.topinner2,.midwht{width:1095px;margin:0 auto; po}
+.peopwrap img,.upsmimg img{float:left;margin-right:4px}
+.settings li a,.settings li a:hover{color:#fff;width:140px}
+#whitearea{float:left;background:#fff}
+.compose{margin-bottom:20px;border-radius:5px;background:#ff7f14;width:165px;height:40px}
+.compose a{text-transform:uppercase;font-weight:700;font-size:14px;float:left;color:#fff;padding:12px 50px}
+.inboxlft{float:left;width:220px;margin:38px 10px 0 25px}
+.inboxmid{width:706px;float:left;margin-top:38px}
+ul.mailcontent li{text-transform:capitalize;font-weight:700;font-size:14px;padding:5px 20px}
+ul.mailcontent li a{color:#ededed}
+ul.mailcontent li a.active{color:#ff7f14}
+ul.mailservice li a{width:170px;height:37px;float:left;border-bottom:2px solid #fff;background:#ccc}
+ul.mailcontent{margin-bottom:20px}
+ul.mailservice li img{border-right:1px solid #fff}
+ul.mailservice li span{text-transform:capitalize;color:#fff;font-weight:700;margin-top:10px;font-size:15px;float:right;width:125px}
+.message{font-size:12px;float:left;width:670px;border-bottom:1px dotted #ccc;padding:10px}
+.message .title{font-weight:700;padding:0 10px}
+.unread{background:#f8f8f8}
+#mailtitle{background:#e8e8e8;float:left;width:670px;padding:10px}
+#mailtitle .subject,#mailcontent .subject{float:left;font-size:16px;width:70%;font-weight:700;padding:10px 0}
+#mailtitle .receiveddate,#mailcontent .receiveddate{width:25%;float:left;padding:12px 0}
+#mailtitle .content,#mailcontent .content{width:100%;float:left;line-height:2em;font-size:14px}
+#mailcontent{border-bottom:1px solid #e8e8e8;float:left;width:670px;margin-top:15px;padding:10px}
+#mailreply{margin-top:20px;width:670px;float:left;border:1px solid #e8e8e8}
+#mailreply .subject{border-bottom:1px solid #e8e8e8;padding:15px}
+#mailreply select{background:none;border:none;padding:5px}
+#mailreply .replymail{float:left;width:100%;border-bottom:1px solid #e8e8e8}
+#mailreply .mailtext textarea{border:none;color:#999;float:left;width:100%;height:300px}
+#mailreply .submit{width:100%;float:left;border-top:1px solid #e8e8e8;background:#e8e8e8;padding:10px 0}
+input.mailid{border:1px solid #fff;height:45px;width:550px}
+.orangebutton{text-transform:uppercase;font-weight:700;cursor:pointer;color:#fff;border-radius:5px;border:none;background:#ff7f14;margin-left:20px;width:100px;padding:10px}
+span.maildel{float:right;margin-right:20px;padding-top:7px}
+.submit .add,.submit .att{padding:10px}
+#popup{width:550px;font-size:16px;margin:0 auto}
+#popup .topband{background:#e8e8e8;border-top-right-radius:5px;border-top-left-radius:5px;height:55px}
+#popup .bottomband{background:#e8e8e8;border-bottom-right-radius:5px;border-bottom-left-radius:5px;height:30px;padding:25px 0}
+#popup .innerband input{border:0;padding-left:11px;border-bottom:1px solid #e8e8e8;height:60px;width:98%}
+#popup .innerband textarea{border:0;color:#999;height:320px;width:100%}
+#popup .google{float:left;padding:10px}
+#popup .close{float:right;padding:10px}
+#header_login{width:570px;float:right;margin:10px}
+.header_loginleft{width:210px;float:left}
+.header_loginright{float:left;width:200px}
+#login_username,#login_password{border:1px solid #3a518a;border-radius:4px 4px 4px 4px;-webkit-border-radius:3px;width:166px;padding:5px 8px}
+.header_loginright span,.header_loginleft div{float:left;margin:10px 0}
+.header_loginleft span{padding-left:10px}
+#login_topblack{background:#000;height:70px;color:#fff;width:100%;}
+#login_btn{border-radius:3px;background:0;border:1px solid #1d3871;background: #1d3871;-webkit-border-radius:3px;-webkit-box-shadow:0 1px 0 #6f85b3 inset, 0 1px 1px rgba(0,0,0,.18);color:#fff;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:700;cursor:pointer;line-height:25px;height:25px;width:95px;padding:0}
+#login_logo{float:left;padding:20px 0 0}
+.thankyou{margin-top:200px;color:#fff;font-weight:700;font-size:18px;background:url(../images/transgray.png);border-radius:8px;text-align:center;padding:30px 15px}
+.amember2 a,.fmenu li a,.header_loginright span a{color:#fff}
+.signup2{margin-top:94px;color:#fff;font-weight:700;font-size:18px;background:url(../images/transgray.png);border-radius:8px;text-align:center;padding:30px 15px}
+#fullWidthContainer
+{
+    
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    background: url(../images/transgray.png);
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px 15px;
+    margin: 20px;
+    text-align: left;
+}
+
+#tabs a
+{
+    color: #fff;
+    font-size:20px;
+    margin-bottom:10px;
+    border:0;
+    outline: 0;
+}
+
+.ui-tabs-active a
+{
+     text-shadow: 2px 2px 7px  #000,-2px -2px 7px  #000,2px -2px 7px  #000,-2px 2px 7px  #000;
+   
+}
+>>>>>>> f5068b4cb01ec3b0db774ae3c26d1b09f8fbcec9

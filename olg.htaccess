@@ -1,0 +1,4 @@
+Options -Indexes
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^whatsdadilly.com [NC] 
+RewriteRule ^(.*)$ http://www.whatsdadilly.com/betaPhase [L,R=301] 

@@ -1,0 +1,19 @@
+#upload .upload{
+	font-family:verdana;
+}
+#thumbnail{
+	float:left;
+        margin-top: 182px;
+}
+#thumb_preview_holder{
+	float:left;
+	width:156px;
+	height:156px;
+	overflow:hidden;
+	margin-left:10px;
+	margin-top:20px;
+        position:absolute;
+}
+#save_thumb{
+	/*margin-top:30px;*/
+}

@@ -1,0 +1,20 @@
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                            http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Comments" table="comments">
+        <id name="id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+
+        <field name="author_id" type="string" />
+        <field name="post_id" type="string" />
+        <field name="text" type="string" />
+        <field name="date" type="string" />
+        
+     
+      
+    </entity>
+</doctrine-mapping>

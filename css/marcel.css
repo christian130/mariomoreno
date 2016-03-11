@@ -1,0 +1,131 @@
+/* Styles specific to this particular page */
+.scroll-pane
+{
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+}
+.horizontal-only
+{
+	height: auto;
+	max-height: 200px;
+}
+#titlePhoto:hover { background-color: #dadbff;}
+.owner h2{ font-size: 2em; }
+.owner .imgowner{ height: 16px; width: 16px; border-radius: 5px; border-color: white; vertical-align: top; float: next; }
+.owner {width: 29.5em; border: #ffcc66 dashed 3px; margin-top: 10px; border-radius: 5px; position: absolute; left: 37em; margin-left: 10px;  padding: 3px; color: #0099ff;}
+.photo_main .remove_icon{ background-image: url(../images/read2.png); width: 20px; height: 20px; position: relative; top: 2em; left: 31.2em; cursor: pointer;}
+.photo_main .photo_detail img{padding: 5px; border: #ffcc66 dotted 3px; border-radius: 5px; width: 75%; height: content-box; ;}
+.comments_form .comment_input{ height: 25px; width: 24em; border-radius: 5px; text-wrap: avoid; padding: 4px;  border: #0099ff double 2px; font-size: 15px; font-family: verdana;}
+.comments_form{ width: 30em; border: #ffcc66 dashed 3px; margin-top: 10px; border-radius: 5px; position: relative; left: 37em; top: 10em; margin-left: 10px; padding: 3px;}
+.comments{ width: 30em; border: #ffcc66 dashed 3px; margin-top: 10px; border-radius: 5px; position: relative; left: 37em;top: 10em; margin-left: 10px; }
+.comments .comment .remove_icon{ height: 16px; width: 16px; border-radius: 24px; border-color: white; float: right; cursor:pointer; z-index: 20000;}
+.comments .comment .comment-made img{ height: 16px; width: 16px; border-radius: 5px; border-color: white; vertical-align: top; float: next; }
+.comments .comment .comment-made .link:hover{ text-decoration: underline;}
+.comments .comment .comment-made .link{ color: whitesmoke; font-size: 1em; text-align: justify; background-color: #ff9900; border-color: #ff9900;  height: auto; width: 29em;  margin-right: 30px; float: inside; margin-right: 10px;}
+.comments .comment .comment-made{ color: whitesmoke; font-size: 1em; text-align: justify; background-color: #ff9900; border-color: #ff9900;  height: auto; width: 29em;  margin-right: 30px; float: inside; margin-right: 10px;}
+.comments .comment .comment-text{ width: 29em;color: whitesmoke; font-size: 1em; text-align: justify; position: relative;  text-wrap: avoid; padding-right: 10px;}
+.comments .comment{ background-color: #ffcc66; margin: 3px 2px 3px 2px; border-radius: 3px; padding: 3px; }
+.photo_main .photo_detail{ }
+.photo_main{ width: 515px; padding: 5px; position: absolute; margin-left: 30px;}
+
+.results .loading  { position: relative; left: 150px; text-align: center; height: 20px; width: 20px;}
+.results { border-radius: 0 0 6px 6px; display:none; position: absolute; top: 45px; color: #fff; background:#000;  padding:6px 15px; text-align:center; width: 320px; z-index: 2000; }
+.results li {  width: 320px;  height: 45px;}
+.results li:hover {background-color: #d8d8d8;}
+.results a { color: #fff;   }
+.results img { width: 40px; height: 40px; float: left; }
+
+.bar {
+    height: 18px;
+    background: green;
+}
+.photo_lists .p_3{position: relative;  left:420px; top: 0px;}
+.photo_lists .p_2{position: relative;  left:210px;}
+.photo_lists img{ width:200px; height: 200px; border: 3px white solid; border-radius: 6px;}
+.fav_icon { background-image: url(../images/favicon.png); width: 20px; height: 20px; position: relative; cursor: pointer; z-index: 200;} 
+.photo_style .lines{ height: 200px; }
+.photo_style{background-color:white;  width: 210px; height: 200px; margin: 3px 2px 3px 5px;  border-radius: 10px; float: inside;}
+.photo_lists{ border-color:blue; width: 720px; margin-top: 10px; border:3px solid #e6e6e6; clear:both;float: left}
+.album_header .remove_icon{ background-image: url(../images/read2.png); width: 20px; height: 20px; position: relative; cursor: pointer; float: right;}
+.album_header{ font-size: 30px; background:#78c7eb;border-radius:2px 2px 0 0;color:#fff;text-align:left; width: auto ; margin-bottom: 10px; padding-left: 4px; padding-bottom: 4px;}
+.labelTitle { width: 30px; height: 40px; font-size: 15px; margin-right: 10px;}
+.inputTitlePhoto { border: cyan dashed 3px; width: 10em; height:1.5em; font-size: 1.5em; border-radius: 4px;}
+#formTitle { display: none;}
+.inputTitle { border: cyan dashed 3px; width: 300px; height: 40px; font-size: 15px; border-radius: 4px;}
+#photoUp { width: 400px; height: 400px;}
+#Fileholder { border: 10px dashed #ccc; width: 400px; height: 400px; margin: 20px auto;}
+#Fileholder.hover { border: 10px dashed #333; }
+
+.pos_3{position: relative;  left:440px; top: -424px;}
+.pos_2{position: relative;  left:220px; top: -212px;}
+.album_style .photo_num{text-align: right; float: inside; position: relative; top: -1em;}
+.album_style{background-color: #f2f5ff;  width: 204px; height: 200px; margin: 3px 2px 3px 5px;  border-radius: 5px; padding: 5px;}
+.album_lists img{ width: 200px; height: 180px; border-color: white; border-radius: 4px;}
+.album_lists h4{ background:#78c7eb; color:#fff; width: auto;}
+.album_lists .lines{ height: 210px; }
+.album_lists{ border-color:blue; width: 665px; margin-top: 10px; border:1px solid #e6e6e6; clear:both;text-align:left; float: inside; padding-bottom: 4px;}
+
+.friend_lists img{ width: 80px; height: 80px; border-radius: 3px; border-color: white; float: left;}
+.friend_lists .friendAll{ font-size:12px;font-weight:700; width: 300px;color:#fff;background:#000; border-radius: 0 0 6px 6px; text-align:center; padding:6px 15px; cursor: pointer; }
+.friend_lists h3{ background:#78c7eb; color:#fff; width: auto; font-size: 15px; }
+.friend_lists .lines{ height: 80px; margin-top: 5px; text-align: center;  border: 1px solid #e6e6e6;}
+.friend_lists .lines:hover{ background-color: #e6e6e6;}
+.friend_lists{ border:1px solid #e6e6e6; border-color:blue; width: 500px; margin-top: 10px; border:3px solid #e6e6e6; clear:both;text-align:center; }
+.friend_lists a{font-size: 18px;  text-align: center; color:black; }
+.friend_lists a:hover{color:black; }
+
+.album_form .title{width: 400px;  height: 30px; font-size: 18px; border: #ccccff solid 3px; border-radius: 4px;}
+.album_form{ border-color:blue;  width: 600px; padding: 3pt; height: available; }
+.createAlbum{ background:#78c7eb;border-radius:2px 2px 0 0;color:#fff;text-align:center; width: auto;  padding: 2pt;}
+
+.friendsresultignore{ font-size: 10px; color: white;}
+.friendsresult{ font-size: 15px; color: white;}
+.peoplebx{float:left;margin:20px 0 0;padding:0 50px}
+.peoplebx img{ height: 30px; width: 30px; border-radius: 2px 2px 2px 2px; border-color: white;}
+.friendwrap{overflow:hidden;padding:2px 0 5px}
+.friendwrap img{float:left;margin:8px 12px 0 0}
+.frienddropwrap{float:left;width:410px;background:#3e3b3b;position:absolute;top:45px;display:none;z-index: 2000; }
+.frienddropwrap h3{font-size:12px;font-weight:700;color:#fff;background:#000;border-radius:0 0 6px 6px;padding:6px; margin-top: -10px;}
+.mfrienwrap{background:#262829; height: 60px;padding-left: 15px; padding-top: 5px; padding-bottom: 5px;}
+.friednamewrap{float:left;width:180px;color:#fff;margin-right:6px;}
+.namtitwrap{float:left;width:auto;color:#fff;}
+.namtitwrap h4{font-size:11px;font-weight:700}
+.namtitwrap p{font-size:10px;line-height:12px;padding:2px 0}
+.confirmbutton{background:#ff7e29;border-radius:1px;float:left;border:0;color:#fff;text-align:center;font-size:10px;font-weight:700;width:60px;cursor:pointer;margin:0px 4px 0 0px;padding:4px 12px}
+.ignorebutton{background:#9e9c9c;border-radius:1px;float: outside;border:0;color:#354552;text-align:center;font-size:10px;font-weight:700;width:60px;cursor:pointer;margin:0px 0 0;padding:4px 12px}
+.frienddropwrap h5{font-size:12px;font-weight:700; color:#fff;background:#000;text-align:center;border-radius:0 0 6px 6px;padding:6px 15px 6px 15px; cursor: pointer; margin-bottom: -10px;}
+.infomenu .notify { float:left; }
+
+.notification_lists h3{ font-size: 30px; text-align: center; border: 3px solid #006666; border-color: white;}
+.notification_lists .lines:hover{ border: 1px solid #9e9c9c;  background-color: #999999;}
+.notification_lists .readed{float: right;cursor:pointer;display:block;width:20px;height:20px;}
+.notification_lists .lines{ border: 1px solid #9e9c5c;}
+.notification_lists img{ height: 40px; width: 40px; }
+.notification_lists {  background-color: #9e9c9c;; border:1px solid #e6e6e6; border-color:blue; width: 500px; margin-top: 10px; border:3px solid #e6e6e6; clear:both;text-align:left; }
+
+.notify{  position: relative; top: -0.7em; left:0.5em; font-weight: bold; font-family: lucida grande; color: white; background-color:  red; border-color: red; border-radius: 2px 2px 2px 2px; z-index: 2000; } 
+.notification { border-radius: 0 0 6px 6px; display:none; position: absolute; top: 45px; color: #fff; background:#000;  padding:6px 15px; text-align:center; width: 320px; z-index: 2000; }
+.notificationwrap img{cursor: pointer;}
+.notificationwrap p{cursor: pointer;}
+.notificationwrap{ background:#262829; float:left; width:300px; color:#fff; margin-right:6px; padding: 6px 0 0 6px; }
+.notificationwrap h3{ font-size:12px; font-weight:bold; color:#fff; background:#000;  padding:6px 15px;}
+.notification h5{font-size:12px;font-weight:700; width: 300px;color:#fff;background:#000;text-align:center; padding:6px 15px; cursor: pointer; }
+.notification .readAll{font-size:12px;font-weight:700; width: 300px;color:#fff;background:#000; border-radius: 0 0 6px 6px; text-align:center; padding:6px 15px; cursor: pointer;}
+.message_num{  padding:14px 3px 0 0px;  color:#fff; float:left;  position: relative; left: -10px;} 
+.messages{float:left; width:150px; background:#3e3b3b; border-radius: 0 0 6px 6px; position:absolute; top:13%; display:none;  z-index: 2000;}
+.messages .sender{ width: 20px; height: 20px;}
+.messageswrap{ background:#262829; float:left; width:150px; color:#fff; margin-right:6px;  }
+.messageswrap h3{ font-size:12px; font-weight:bold; color:#fff; background:#000;  padding:6px 15px;}
+.friendimg{ height: 72px; height: 72px; border-radius: 3px  3px  3px 3px; border-color: white;}
+.friendrequestimg{ height: 50px; width:  50px; float:left;margin-right:6px}
+.friends_request{ z-index: 2000; }
+.friends_num{    color:red; float:left; position: relative; left:0.7em; top: -0.7em; font-weight: bold; font-family: lucida grande; color: white; background-color:  red; border-color: red; border-radius: 2px 2px 2px 2px;  text-align: center;} 
+.infomenu .second{margin-right:20px}
+.infomenu .third a{width:31px}
+.menuConfirm {display: none; position: relative; left: 2em; border: #006666 ridge thick; width: 200px;}
+.friendrightProfile{position: relative; left: 66em; top: -8em; width:222px;padding-left:20px;margin-top:38px}
+.friendrightProfile h3{clear:both;color:#000;font-size:17px;font-weight:700}
+img.notif1 {
+width: 102px!important;
+}

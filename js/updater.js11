@@ -1,0 +1,74 @@
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+$(document).ready(function(){
+setInterval(function (){                    
+
+        
+        var $notifications = $.ajax({
+            type: "POST",
+            url:"response.php",
+            data: 'getit',        
+            async: false,
+            processData: false,
+            dataType: "html",
+            success:   function(){             
+            },
+            error: function(){
+                console.log('had an error to get the information');
+            }
+        }).responseText;
+        obj = JSON.parse($notifications);
+       //alert(JSON.stringify(obj.friends, null, 4));
+        $('.peopwrap').html(obj.friends_tumbnail);
+        $('.jessicatxt').html(obj.tumbnail_text);
+        $('.notification').html(obj.getAll);
+        $('.friends_request').html(obj.friends_request);
+		$('.friends_num').html(obj.friend_request_number);
+		$('.notify').html(obj.getAllNumber);
+		$('#notification_popup').html(obj.getFirst);
+		$('#notification_popup').css("display",obj.popup_display);
+		
+    },'6000');
+	setInterval(function (){                    
+
+        
+        var $notifications = $.ajax({
+            type: "POST",
+            url:"response.php",
+            data: 'getit',        
+            async: false,
+            processData: false,
+            dataType: "html",
+            success:   function(){             
+            },
+            error: function(){
+                console.log('had an error to get the information');
+            }
+        }).responseText;
+        obj = JSON.parse($notifications);
+       //alert(JSON.stringify(obj.friends, null, 4));
+        $('.peopwrap').html(obj.friends_tumbnail);
+        $('.jessicatxt').html(obj.tumbnail_text);
+        $('.notification').html(obj.getAll);
+        $('.friends_request').html(obj.friends_request);
+		$('.friends_num').html(obj.friend_request_number);
+		$('.notify').html(obj.getAllNumber);
+		$('#notification_popup').html(obj.getFirst);
+		
+		if(obj.getCount == 1)
+		{$('#notification_popup').css("display","none");}
+		else
+		{$('#notification_popup').css("display","block");}
+		
+    },'6000');
+	
+	
+	
+	
+	
+	
+	
+	
+});

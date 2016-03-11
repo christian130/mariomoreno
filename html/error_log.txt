@@ -1,0 +1,42 @@
+[24-Dec-2013 13:17:52 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'datetime' in 'field list'' in C:\xampp\htdocs\whatsdadilly\Doctrine\DBAL\Connection.php:646
+Stack trace:
+#0 C:\xampp\htdocs\whatsdadilly\Doctrine\DBAL\Connection.php(646): PDO->query('SELECT `id_noti...')
+#1 C:\xampp\htdocs\whatsdadilly\model\Notification.php(103): Doctrine\DBAL\Connection->executeQuery('SELECT `id_noti...')
+#2 C:\xampp\htdocs\whatsdadilly\html\header.php(108): NotificationModel::getNotifications(Object(Doctrine\ORM\EntityManager), 43)
+#3 C:\xampp\htdocs\whatsdadilly\html\album_detail.php(15): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\whatsdadilly\album_detail.php(19): include('C:\xampp\htdocs...')
+#5 {main}
+
+Next exception 'Doctrine\DBAL\DBALException' with message 'An exception occurred while executing 'SELECT `id_notifications`, `id_friend` , profile_pic, `type` , `message` , `readed` , `datetime`
+FROM notifications, sh_users
+WHERE id_user = 43
+AND sh_users.user_id = id_friend  in C:\xampp\htdocs\whatsdadilly\Doctrine\DBAL\DBALException.php on line 47
+[24-Dec-2013 13:18:36 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notifications.datetime' in 'order clause'' in C:\xampp\htdocs\whatsdadilly\Doctrine\DBAL\Connection.php:646
+Stack trace:
+#0 C:\xampp\htdocs\whatsdadilly\Doctrine\DBAL\Connection.php(646): PDO->query('SELECT `id_noti...')
+#1 C:\xampp\htdocs\whatsdadilly\model\Notification.php(103): Doctrine\DBAL\Connection->executeQuery('SELECT `id_noti...')
+#2 C:\xampp\htdocs\whatsdadilly\html\header.php(108): NotificationModel::getNotifications(Object(Doctrine\ORM\EntityManager), 43)
+#3 C:\xampp\htdocs\whatsdadilly\html\album_detail.php(15): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\whatsdadilly\album_detail.php(19): include('C:\xampp\htdocs...')
+#5 {main}
+
+Next exception 'Doctrine\DBAL\DBALException' with message 'An exception occurred while executing 'SELECT `id_notifications`, `id_friend` , profile_pic, `type` , `message` , `readed` , `date`
+FROM notifications, sh_users
+WHERE id_user = 43
+AND sh_users.user_id  in C:\xampp\htdocs\whatsdadilly\Doctrine\DBAL\DBALException.php on line 47
+[24-Dec-2013 13:01:39 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 14:09:03 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:30:13 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:30:18 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:30:32 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:30:34 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:30:54 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:40:36 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:54:43 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:54:48 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 17:58:44 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 18:02:37 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 18:13:43 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 18:19:28 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 18:36:43 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25
+[24-Dec-2013 18:38:05 UTC] PHP Notice:  Undefined index: userid in /home/whatsda2/public_html/beta/classes/Session.class.php on line 25

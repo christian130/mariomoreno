@@ -1,0 +1,16 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                            http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="LastLogin" table="last_login">
+        <id name="login_id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+        <field name="ipaddress" type="string" />
+        <field name="login_date" type="string" />
+        <field name="user_id" type="integer" />
+        <field name="device" type="string" />
+        <field name="logout_date" type="string" />
+    </entity>
+</doctrine-mapping>

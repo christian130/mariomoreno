@@ -1,0 +1,79 @@
+/* CSS Document */
+body{ margin:auto 0px; background:#e9eaee;}
+.outer{ float:left; width:100%;}
+.left_box{ float:left; width:100%; background:#FFF; -moz-box-shadow: 0 0 7px #888;
+-webkit-box-shadow: 0 0 7px#888;
+box-shadow: 0 0 7px #888; padding:15px;}
+.left_box h1{ float:left; width:100%;font-size:25px; margin:0px; color:#000;}
+.requst_box{ float:left; width:100%; border-top:2px solid #e6e5e0; padding-top:10px; margin-top:10px;}
+.profile_text h2{ float:left; font-size:16px; color:#455ea1; font-weight:bold; width:100%; margin-top:10px;}
+.profile_text p{ color:#a7aaa9;}
+.profile_text{float: left;
+    width: 50%;}
+	.requst_box img{ float:left; margin-right:10px;}
+	.profile_text p img{ float: left;
+    margin-right: 5px;
+    margin-top: 5px;}
+	.button_boxmain{ float:right;     margin-top: 36px;}
+	.button_boxmain button{ float:left; background:#000; padding:2px 10px; color:#fff; border:none; margin-top:5px;}
+	.right_box{ background: #f8f9fa none repeat scroll 0 0;
+    box-shadow: 0 0 7px #888;
+    float: left;
+    padding: 15px 0;
+    width: 100%;}
+.InviteYourFrieds {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.InviteFriendsInputs {
+     margin: 0 10px;
+}
+.ActiveLogin {
+ 
+}
+.gmailLogin, .Outlook-Hotmail, .YahooLogin {
+    border-bottom: 1px dotted #9a9a9a;
+    height: 55px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.MailLoginIcon {
+    float: left;
+    width: 8%;
+}
+.FormTitleText {
+    line-height: 29px;
+}
+.InviteFriendsInputs .form-inline {
+    float: right;
+}
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.sr-only {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.InviteFriendsInputs .form-control {
+    font-size: 12px;
+    width: 195px;
+}
+.ActiveLogin .btn {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #4c4c4c 0%, #131313 100%) repeat scroll 0 0;
+    border-radius: 4px;
+    color: #ffffff;
+  
+     padding: 7px 12px;
+}
+
+.MailLoginIcon img{ margin-top:6px;}
+.form-inline .btn-default{ background:#000; color:#fff;}

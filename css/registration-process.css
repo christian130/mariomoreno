@@ -1,0 +1,103 @@
+
+.fleft {float: left;}
+.fright {float: right;}
+
+.cols-xs {
+	max-width:550px;
+	background:#f0f0f0;
+	border-radius:11px;
+	margin:0 auto;
+        margin-top: 50px;
+	}
+	
+	.StepProgresses {
+		height:60px;
+		width:100%;
+		
+		}
+		.Step1Process {font-weight:bold;color:#FFF;font-family:Arial;padding:10px 0px 0px 10px;background:url(../rgimages/step1-bg.png) no-repeat; float:left; color:#FFF; width:156px; height:60px;}
+		.Step2Process {font-weight:bold;color:#FFF;font-family:Arial;padding:10px 0px 0px 10px;background:url(../rgimages/step-bg.png) no-repeat; float:left; width:138px;height:60px;}
+		.Step3Process {font-weight:bold;color:#FFF;font-family:Arial;padding:10px 0px 0px 10px;background:url(../rgimages/step-bg.png) no-repeat; float:left;width:138px;height:60px;}
+		.Step4Process {font-weight:bold;color:#FFF;font-family:Arial;padding:10px 0px 0px 10px;background:url(../rgimages/step4-bg.png) no-repeat; float:left;width:117px;height:60px;}
+        .StepProgresses small {font-weight:normal;}
+		
+	.Step1-25Percent {
+		width:25%;
+		float:left;
+		height:23px;
+		clear:both;}
+		
+	.progress-bar-warning {
+    background: url("../rgimages/progressbar-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	font-family:Arial;
+	font-size:11px;
+}
+
+.progress {
+    background: url("../rgimages/progress-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius:0px;
+	-o-border-radius: 0px;
+    height: 22px;
+    margin-bottom: 20px;
+	margin-top:-2px;
+    overflow: hidden;
+	width:99.80%;
+	text-align:right;
+	padding-right:20px;
+}
+
+.InviteYourFrieds {font-size:18px;
+font-weight:bold;
+margin-left:20px;}
+
+.InviteFriendsInputs {
+margin:20px;}
+.InviteFriendsInputs .form-inline {float:right;}
+
+.gmailLogin, .Outlook-Hotmail, .YahooLogin {border-bottom: 1px dotted #9a9a9a; height:55px;padding:10px 0px 10px 0px; line-height:20px;}
+.OtherEmailService {height:55px;padding:10px 0px 10px 0px; line-height:20px;}
+.InviteFriendsInputs .form-control{font-size:12px; width:195px;}
+.MailLoginIcon {width:11%; float:left;}
+.ActiveLogin {font-weight:bold;}
+.FormTitleText { line-height:29px;}
+
+.InviteFriendsInputs .btn{border-radius:4px; background:url(../rgimages/find-friends-inactive-button-bg.png) repeat-x; color:#ffffff; padding: 7px 12px; margin-left: -10px; border:none;}
+
+.ActiveLogin .btn{border-radius:4px; background:url(../rgimages/find-friends-button-bg.png) repeat-x; color:#ffffff; padding: 7px 12px;margin-left: -10px;}	
+.SaveOrSkip {height:78px; background:#0e0e0e; margin-bottom:20px;	border-radius:0px 0px 6px 6px; vertical-align:middle; padding:19px 18px 0px 0px;;}	
+
+.FooterBelowHints{font-size:10px; margin:0 auto; width:550px;color:#898989;padding:0px 20px 0px 20px;}	
+.SaveOrSkip .fright a, .SaveOrSkip .fright {color:#cccccc;}
+.SaveOrSkip .btn {background:url(../rgimages/saveANDcontinue-btn.png) repeat-x;border-radius:4px;color:#ffffff; padding: 7px 12px; border:none; height:40px;}
+.25percent, .50percent, .75percent, .100percent {font-weight:bold; font-size:12px;}
+
+.SelectCountry, .SelectCurrentState, .CurrentCitySelect, .HometownSelect {border-bottom: 1px dotted #9a9a9a; height:55px;padding:10px 0px 10px 0px; line-height:20px;}
+
+.SelectCounCityDetails {
+margin:20px}
+.SelectCounCityDetails .form-control{font-size:12px; width:245px;float:right;}
+.SelectCounCityDetails .form-inline {float:right;}
+
+.PhotoUploadLeft {width:250px; float:left; margin:0px 0px 20px 44px;}
+.PhotoUploadRight  {width:208px; float:left; text-align:center;}
+
+
+.ProfilePhotoFrame img{border:6px solid #595959; outline:1px solid #7d7d7d;}
+
+.merge {clear:both;}
+.orDevider {width:35%; color:#c5c5c5;}
+.PhotoUploadSpan a {font-size:16px; font-weight:bold; color:#000000;}
+.SocialNetworksEmailTabs {padding:20px;}
+.nav > li > a {
+    color: #000000;
+
+    font-weight: bold;
+
+}
+
+tr {border-bottom:1px solid #dadada; }
+td {padding-top:10px; padding-bottom:10px;}
+td img {padding-right:20px;}
+

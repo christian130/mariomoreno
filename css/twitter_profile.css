@@ -1,0 +1,212 @@
+/* 
+    Document   : twitter_profile
+    Created on : Mar 12, 2013, 2:50:12 PM
+    Author     : User
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+    a, u {
+        text-decoration: none;
+    }
+    .wrapper{width:660px; margin-left:auto;margin-right:auto;}
+    .welcome_txt{
+        margin: 20px;
+        background-color: #EBEBEB;
+        padding: 10px;
+        border: #D6D6D6 solid 1px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+    }
+    .latest_tweets
+    {
+        margin: 20px;
+        background-color: #EBEBEB;
+        padding: 10px;
+        border: #D6D6D6 solid 1px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        text-align: center;
+    }
+    .tweet_box{
+        margin: 20px;
+        background-color: #FFF0DD;
+        padding: 10px;
+        border: #F7CFCF solid 1px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+    }
+    .tweet_box textarea{
+        width: 500px;
+        border: #F7CFCF solid 1px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+    }
+    .tweet_list{
+        margin: 20px;
+        padding:20px;
+        background-color: #E2FFF9;
+        border: #CBECCE solid 1px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+    }
+    .tweet_list div.tweet-outer{
+        border-bottom: 1px dashed silver;
+        clear: both;
+        color: #5C5C5C;
+        display: block;
+        font-family: verdana;
+        font-size: 12px;
+        list-style: none;
+        overflow: hidden;
+        padding: 5px;
+
+    }
+    .tweet_list div.tweet-txt{
+        position: relative;
+
+    }
+    .ui-widget-content
+    {
+        border : 0px !important;
+    }
+    .loading-text{
+        background: #40A0A0;
+        color: #FFFFFF;
+        width:100%;
+        margin: 0 auto;
+    }
+    .popup_footer{
+        text-align: center;  
+
+        height: 28px;
+    }
+    .btn-cmt {
+        background-color: #525B69;
+        border-color: #AAB0BB #525A69 #333842;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        color: #FFFFFF;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    }
+    .btn-cmt, .btn-del, .btn-dbl, .btn-add, .btn-credit, .btn-throbber {
+        -moz-user-select: none;
+        background-clip: padding-box;
+        border-radius: 2px 2px 2px 2px;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 15px;
+        margin-left: 16px;
+        padding: 0 13px 7px 12px;
+        white-space: nowrap;
+    }
+    ._userInfoActions{
+        background: none repeat scroll 0 0 #9B9B9B;/*#3D3D3D;*/
+        bottom: 0;
+        padding: 1px;
+        position: absolute;
+        width: 100%;
+    }
+    .verified-large-border {
+        
+        background-position: -120px -480px;
+    }
+    .verified{
+
+    }
+    .verified-large-border, .translator-large-border {
+        height: 21px;
+        width: 21px;
+        position: relative;
+        top: -96px;
+    }
+
+    .visuallyhidden {
+        border: 0 none;
+        clip: rect(0px, 0px, 0px, 0px);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .profile-card.profile-header .lock-large {
+        margin-top: 5px;
+    }
+    .lock-large {
+        background-position: -200px -480px;
+        height: 18px;
+        left: -1px;
+        position: relative;
+        top: -87px;
+        width: 15px;
+    }
+    .profile-card.profile-header .follow-status {
+        background-color: rgba(0, 0, 0, 0.25);
+        color: #FFFFFF;
+    }
+    .follow-status {
+        background-color: black;
+        border-radius: 3px 3px 3px 3px;
+        color: white;
+        font-size: 10px;
+        line-height: 1;
+        margin-left: 5px;
+        padding: 2px 5px;
+        position: relative;
+        text-transform: uppercase;
+        top: -87px;
+    }
+    .tweet-rt{
+        color: #FFFFFF;
+        background-color: #019AD2;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 0.5;
+        position: relative;
+        right: -390px;
+        top: 28px;
+        background-color: #019AD2;
+        background-image: linear-gradient(#33BCEF, #019AD2);
+        background-repeat: repeat-x;
+        color: #FFFFFF;
+height:30px;
+border-radius:5px;
+    }
+
+    .retweeted .dogear, .favorited .dogear, .retweeted.favorited .dogear {
+        display: block;
+    }
+    .favorited .dogear {
+        background-position: -30px -450px;
+    }
+    .retweeted.favorited .dogear {
+        background-position: -60px -450px;
+    }
+    .retweeted .dogear {
+        background-position: 0 -450px;
+    }
+    .dogear {
+        display: none;
+        height: 24px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 24px;
+    }
+    i, .icon {
+        background-image: url("twitter_web_sprite_icons.png");
+
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: text-top;
+    }
