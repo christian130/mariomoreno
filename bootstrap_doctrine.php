@@ -3,7 +3,7 @@
 
 // See :doc:`Configuration <../reference/configuration>` for up to date autoloading details.
 use Doctrine\ORM\Tools\Setup;
-require_once($_SERVER['DOCUMENT_ROOT']."betaPhase\\Doctrine\\ORM\\Tools\\Setup.php");
+require_once("Doctrine/ORM/Tools/Setup.php");
 Setup::registerAutoloadPEAR();
 
 // Create a simple "default" Doctrine ORM configuration for XML Mapping
@@ -24,7 +24,7 @@ $conn = array(
     'host'     => 'localhost',
     'dbname'   => 'wwwwhats_betaPhase',
     'user'     => 'root',
-    'password' => ''
+    'password' => 'toor'
 );
 // obtaining the entity manager
 $entityManager = Doctrine\ORM\EntityManager::create($conn, $config);

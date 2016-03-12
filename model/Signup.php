@@ -9,8 +9,11 @@
  * Description of Signup
  *
  * @author sathish
- */
-require_once "../bootstrap.php";
+ */ 
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__.'/bootstrap.php'); 
+//die(__ROOT__);
+//require_once('/bootstrap.php');
 
 class Signup {
 

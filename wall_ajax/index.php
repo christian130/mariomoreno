@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."betaPhase\\model\\newComments.php");
+require_once("../model/newComments.php");
 //var_dump($_SERVER['DOCUMENT_ROOT']."betaPhase/model/newComments.php");
 //var_dump(getcwd());
 //die();
