@@ -9,6 +9,6 @@ $params02= Array(
 "text"=>$_POST["text"],
 "date"=>$_POST["date"]
 );
-AnotherCommentsModel::addComment01($entityManager);
+AnotherCommentsModel::addComment01($entityManager,$params02);
 //author_id: <?=$entry['user_id'];  post_id: <?=$entry['id'];text:jQuery("#comminput_<?=$entry['id'] ").val(),date:curDateTime01
 ?>
