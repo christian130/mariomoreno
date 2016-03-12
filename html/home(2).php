@@ -133,12 +133,12 @@
 
 
                         $(document).ready(function() {
-                            /*$( "#dialog" ).dialog(
+                            $( "#dialog" ).dialog(
                             {
                                 title: "Add Social Networks",
                                 width: "40%",
                                 modal: true
-                            });*/
+                            });
                             //                        $.ajax({
                             //                            url: 'test.ini',
                             //                            dataType: 'json',
@@ -359,9 +359,7 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 						.notActshow{
 							display:none;
 						}
-						.
-						
-						sAct{
+						.tweetsAct{
 							cursor:pointer;
 							background:white;
 							color:blue;
@@ -573,12 +571,17 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 <?php
                                         $postids = 0;
 //echo '<pre>';
-//var_dump(json_encode($entries));
-                                        foreach ($entries as $entry) {
+//print_r($entries);
+                                foreach ($entries as $entry) {
                                             //echo $entry['id'];
-                                   //         print('<pre>');
-                                    //        print_r($entry);
+                                         // print('<pre>');
+                                         //   print_r($entry);
+										if($entry['type']==1){
+											$userdetails = WallModel::getUserDetails($entityManager, $entry['author_id']);
+											$infodetails = WallModel::getUserDetails($entityManager, $entry['owner_id']);
+										}else{
                                             $userdetails = WallModel::getUserDetails($entityManager, $entry['user_id']);
+                                        }
 ?>
 
 
@@ -592,8 +595,15 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 							<img class="image_border_style" src="uploads/<?php echo $userdetails[0]['profile_pic']; ?>"  alt="" style="width:49px;height:49px;">
 
 <div class="slider_title_style2">
-
-<span class="author_slide_top author_upload_name"><?php echo $userdetails[0]['firstname'] ?> <?php echo $userdetails[0]['lastname'] ?> </span><span></span><p class="update_profile_date">
+<?php if($entry['type']==1) {?>
+<span class="author_slide_top author_upload_name">
+	<?php echo $userdetails[0]['firstname'].'  '. $userdetails[0]['lastname'] ?> ->
+	<?php echo $infodetails[0]['firstname'].'  '. $infodetails[0]['lastname'] ?>
+ </span>
+<?php } else{ ?>
+<span class="author_slide_top author_upload_name"><?php echo $userdetails[0]['firstname'] ?> <?php echo $userdetails[0]['lastname'] ?> </span>
+<?php } ?>
+<span></span><p class="update_profile_date">
 </p></div>														
 						</div>
 <div style="padding:10px;width:100%;">
@@ -710,41 +720,10 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 
 
 							<img src="uploads/<?php echo $_SESSION['profile_pic']; ?>" alt="" style="width:37px;height:37px;" >
-							<span><input id="comminput_<?php echo $entry['id'] ?>" class="comment_box_inline" placeholder="Write your comment here" type="text"></span>
+							<span><input class="comment_box_inline" placeholder="Write your comment here" type="text"></span>
 							<div class="comment_box_icon comment_box_inline"><a href="#"><span><i class="comment_box_left fa fa-camera"></i></span></a>
 							<a href="#"><span><i class="comment_box_left2 fa fa-smile-o"></i></span></a></div>
 							<h5 class="press_enter_post">Press enter to post</h5>
-							</form>
-							<?php // begin this code will do the trick to enter into the comments?>
-<script type='text/javascript'>
-var curDateTime01 = '<?php echo date('Y-m-d H:i:s');?>';
-var current_<?=$entry['id'] ?>=jQuery("#comminput_<?=$entry['id'] ?>").val();
-$(document).ready(function(){
-
-
-$("#commform_<?=$entry['id'];?>").keypress(function(e) {
-    if(e.which == 13) {	
-	;/*
-  .fail(function(XHR_object, textStatus, errorThrown) {
-    alert( textStatus );
-  });*/
-        //alert('You pressed enter!');
-    }
-});
-})
-function equis<?=$entry['id'];?>(){
-
-$.ajax({
-	type: "POST",  
-	url: "wall_ajax/index.php",
-	data: { author_id: <?=$entry['user_id'];?>, post_id: <?=$entry['id'];?>,text:current_<?=$entry['id'] ?>,date:curDateTime01 }
-})
- .done(function( msg ) {
-    alert( "Data Saved:");
-  })
-}
-<?php // end?>
-</script>
 						</div>
 
 
@@ -774,10 +753,10 @@ $.ajax({
 
 </div>
 
-<?php
 
+
+<?php
                                                                 $postids++;
-                                                                
                                                             }
 ?>
 <div id="loadorders"></div>
@@ -1034,10 +1013,8 @@ $.ajax({
 			var nowCount=0
 			var javaScriptDate = new Date();
 			var differSec =0;
-			
-			
 		//	alert('CurDaet:'+curDateTime+':Java:'+date);
-			/*$.ajax({
+			$.ajax({
 				  type: "POST",
 				  url: "tweets_ajax.php",
 				  data:{curTime:curDateTime},
@@ -1067,11 +1044,7 @@ $.ajax({
 						checkNewActivity();
 						},2000);
 				  }
-				});*/
-				
-				
-				
-				
+				});
 			function checkNewActivity(){
 			$.ajax({
 				  type: "POST",
@@ -1136,3 +1109,4 @@ $('.photo-grid-container').sortablePhotos({
 	  padding: 5
     });
 </script>
+
