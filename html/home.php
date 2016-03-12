@@ -717,8 +717,8 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 							</form>
 							<?php // begin this code will do the trick to enter into the comments?>
 <script type='text/javascript'>
-var curDateTime01 = '<?php echo date('Y-m-d H:i:s');?>';
-var current_<?=$entry['id'] ?>=jQuery("#comminput_<?=$entry['id'] ?>").val();
+
+
 $(document).ready(function(){
 
 
@@ -733,7 +733,8 @@ $("#commform_<?=$entry['id'];?>").keypress(function(e) {
 });
 })
 function equis<?=$entry['id'];?>(){
-
+var curDateTime01 = '<?php echo date('Y-m-d H:i:s');?>';
+var current_<?=$entry['id'] ?>=jQuery("#comminput_<?=$entry['id'] ?>").val();
 $.ajax({
 	type: "POST",  
 	url: "wall_ajax/index.php",

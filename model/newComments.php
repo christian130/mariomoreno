@@ -1,5 +1,5 @@
 <?php
-require_once "bootstrap.php";
+require_once($_SERVER['DOCUMENT_ROOT']."/betaPhase/bootstrap.php");
 
 class AnotherCommentsModel {
      public static function addComment01($entityManager,$params) {
