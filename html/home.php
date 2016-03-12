@@ -29,25 +29,25 @@
 
 
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-	
+    
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
-	
-		
-	<link rel="stylesheet" href="css/profilestyle.css">
-	<link rel="stylesheet" href="css/profile.css">
-	
-	<link rel="stylesheet" href="css/profileresponsive.css">
-	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    
+        
+    <link rel="stylesheet" href="css/profilestyle.css">
+    <link rel="stylesheet" href="css/profile.css">
+    
+    <link rel="stylesheet" href="css/profileresponsive.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
 
-	
-		<script src="js/owl.carousel.js"></script>
+    
+        <script src="js/owl.carousel.js"></script>
 
 
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
@@ -133,12 +133,14 @@
 
 
                         $(document).ready(function() {
-                            /*$( "#dialog" ).dialog(
+                            $( "#dialog" ).dialog(
                             {
                                 title: "Add Social Networks",
                                 width: "40%",
                                 modal: true
-                            });*/
+                            });
+
+
                             //                        $.ajax({
                             //                            url: 'test.ini',
                             //                            dataType: 'json',
@@ -291,19 +293,19 @@ position: relative;
 
 #picture::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
 }
 
 #picture::-webkit-scrollbar
 {
-	width: 6px;
-	background-color: #F5F5F5;
+    width: 6px;
+    background-color: #F5F5F5;
 }
 
 #picture::-webkit-scrollbar-thumb
 {
-	background-color: #000000;
+    background-color: #000000;
 }
 .info_linkbox
 {
@@ -354,37 +356,35 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 
                         }
                         .notshow{
-							display:none;
-						}
-						.notActshow{
-							display:none;
-						}
-						.
-						
-						sAct{
-							cursor:pointer;
-							background:white;
-							color:blue;
-							text-align:center;
-							height: 40px;
-							color: #00BDFF;
-							margin-bottom: 15px;		
-							
-						}
-						.tweetsAct P{
-							padding:10px;
-							font-weight:bold;
-						}
-						.tweetsAct:hover{
-							cursor:pointer;
-							background:#00BDFF;
-							color:blue;
-							text-align:center;
-							height: 40px;
-							color: white;
-							margin-bottom: 15px;
-								
-						}
+                            display:none;
+                        }
+                        .notActshow{
+                            display:none;
+                        }
+                        .tweetsAct{
+                            cursor:pointer;
+                            background:white;
+                            color:blue;
+                            text-align:center;
+                            height: 40px;
+                            color: #00BDFF;
+                            margin-bottom: 15px;        
+                            
+                        }
+                        .tweetsAct P{
+                            padding:10px;
+                            font-weight:bold;
+                        }
+                        .tweetsAct:hover{
+                            cursor:pointer;
+                            background:#00BDFF;
+                            color:blue;
+                            text-align:center;
+                            height: 40px;
+                            color: white;
+                            margin-bottom: 15px;
+                                
+                        }
                     </style>
                     <script type="text/javascript">
                         function loadComments(){
@@ -509,8 +509,8 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
             <div class="social_d">
               <?php include 'socialmenu.php'; ?>
             </div>
-			<div id="tabs-container">
-			 <script type="text/javascript" src="js/wall.js"></script>
+            <div id="tabs-container">
+             <script type="text/javascript" src="js/wall.js"></script>
                                                 <form action="wdd_ajaxupload.php" id="upload_photos" method="post" onsubmit="return submitForm();">
               <textarea name="status" style="width:100%;float:left;border:none;margin-top:9px;margin-bottom:8px;    border-bottom: 1px solid #ccc;"  class="grybord" placeholder="What you want to share..."></textarea>
                                                     <div id="link_info" ></div>                                                                      <div class="clear"></div>
@@ -559,13 +559,13 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 <div role="tabpanel" id="wddSwitch" class="tab-pane active">
 
  <div class="middle_area_three"> 
-	<div class="white_board">
-	  <p>Whiteboard</p>
-	</div>
-	<div class=" tweetsAct notActshow">
-	  <p>There are 0 post.Please Click here to view.</p>
-	</div>
-	</div>
+    <div class="white_board">
+      <p>Whiteboard</p>
+    </div>
+    <div class=" tweetsAct notActshow">
+      <p>There are 0 post.Please Click here to view.</p>
+    </div>
+    </div>
   <div style="clear:both;"></div>
 
 <div class="wallEntries" id="getting_wdd_wall">
@@ -573,7 +573,7 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 <?php
                                         $postids = 0;
 //echo '<pre>';
-//var_dump(json_encode($entries));
+//print_r($entries);
                                         foreach ($entries as $entry) {
                                             //echo $entry['id'];
                                    //         print('<pre>');
@@ -586,25 +586,25 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 
           
           
-         						<div class="middle_area_four crispbx crispbxmain" style="margin-bottom:5px;" id="wall<?php echo $entry['id']; ?>" data="<?php echo $entry['id']; ?>" data-count="<?php echo $postids; ?>">
-						<div class="slider_two_title">
+                                <div class="middle_area_four crispbx crispbxmain" style="margin-bottom:5px;" id="wall<?php echo $entry['id']; ?>" data="<?php echo $entry['id']; ?>" data-count="<?php echo $postids; ?>">
+                        <div class="slider_two_title">
 
-							<img class="image_border_style" src="uploads/<?php echo $userdetails[0]['profile_pic']; ?>"  alt="" style="width:49px;height:49px;">
+                            <img class="image_border_style" src="uploads/<?php echo $userdetails[0]['profile_pic']; ?>"  alt="" style="width:49px;height:49px;">
 
 <div class="slider_title_style2">
 
 <span class="author_slide_top author_upload_name"><?php echo $userdetails[0]['firstname'] ?> <?php echo $userdetails[0]['lastname'] ?> </span><span></span><p class="update_profile_date">
-</p></div>														
-						</div>
+</p></div>                                                      
+                        </div>
 <div style="padding:10px;width:100%;">
 <p><?php echo Functions::addLink($entry['text']) ?></p></div>
 
 <?php if (strlen($entry['link']) > 0) { ?>
-						<div class="display_profile_pic">
+                        <div class="display_profile_pic">
 <?php if (strlen($entry['link_photo']) > 0): ?>
                                                             <img src="<?php echo $entry['link_photo'] ?>" alt=""/>
 <?php endif ?>
-						<div style="padding:10px;">
+                        <div style="padding:10px;">
  <p><a target="_blank" href="<?php echo $entry['link'] ?>" style="color: #000;font-size: 18pt;line-height: 1.2em;"><?php echo $entry['link_title'] ?></a></p>
                                                             <p style="font-size:12pt;"><?php echo $entry['link_description'] ?></p></div>
 
@@ -612,8 +612,8 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 
 
 
-	
-						</div>
+    
+                        </div>
  <?php } ?>
 
 
@@ -694,62 +694,53 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
 
 
 
-						<div class="like_comment_share">
-							<a href="#"><span><i class="fa fa-thumbs-up"></i>Like</span></a>
+                        <div class="like_comment_share">
+                            <a href="#"><span><i class="fa fa-thumbs-up"></i>Like</span></a>
 
-							<a href="#"><span><i class="fa fa-heart"></i>Love it</span></a>
+                            <a href="#"><span><i class="fa fa-heart"></i>Love it</span></a>
                                                        <a href="#" class="add-comment-link" rel="<?php echo $entry['id'] ?>" ><span><i class="fa fa-commenting"></i>Comment</span></a>
-							<a href="#"><span><i class="fa fa-share-square-o"></i>Share</span></a>
-						</div>
+                            <a href="#"><span><i class="fa fa-share-square-o"></i>Share</span></a>
+                        </div>
 
 
 
-						<div class="comment_box" rel="<?php echo $entry['id'] ?>">
+                        <div class="comment_box" rel="<?php echo $entry['id'] ?>">
 
                                                                     <form rel="<?php echo $entry['id'] ?>" id="commform_<?php echo $entry['id'] ?>" action="" method="post" enctype="multipart/form-data">
 
 
-							<img src="uploads/<?php echo $_SESSION['profile_pic']; ?>" alt="" style="width:37px;height:37px;" >
-							<span><input id="comminput_<?php echo $entry['id'] ?>" class="comment_box_inline" placeholder="Write your comment here" type="text"></span>
-							<div class="comment_box_icon comment_box_inline"><a href="#"><span><i class="comment_box_left fa fa-camera"></i></span></a>
-							<a href="#"><span><i class="comment_box_left2 fa fa-smile-o"></i></span></a></div>
-							<h5 class="press_enter_post">Press enter to post</h5>
-							</form>
-							<?php // begin this code will do the trick to enter into the comments?>
-<script type='text/javascript'>
+                            <img src="uploads/<?php echo $_SESSION['profile_pic']; ?>" alt="" style="width:37px;height:37px;" >
+                            <span><input id="comminput_<?=$entry['id'] ?>" class="comment_box_inline" placeholder="Write your comment here" type="text"></span>
+                            <div class="comment_box_icon comment_box_inline"><a href="#"><span><i class="comment_box_left fa fa-camera"></i></span></a>
+                            <a href="#"><span><i class="comment_box_left2 fa fa-smile-o"></i></span></a></div>
+                            <h5 class="press_enter_post">Press enter to post or press this button: </h5>
+                        </div>
 
+<script type="text/javascript">
+//@Author: sistemasphpvenezuela.com
 
-$(document).ready(function(){
-
-
-$("#commform_<?=$entry['id'];?>").keypress(function(e) {
-    if(e.which == 13) {	
-	;/*
-  .fail(function(XHR_object, textStatus, errorThrown) {
-    alert( textStatus );
-  });*/
-        //alert('You pressed enter!');
+$("#comminput_<?=$entry['id'];?>").keypress(function(e) {
+    if(e.which == 13) { 
+    equis<?=$entry['id'];?>();
     }
 });
-})
+
+
 function equis<?=$entry['id'];?>(){
 var curDateTime01 = '<?php echo date('Y-m-d H:i:s');?>';
 var current_<?=$entry['id'] ?>=jQuery("#comminput_<?=$entry['id'] ?>").val();
+
 $.ajax({
-	type: "POST",  
-	url: "wall_ajax/index.php",
-	data: { author_id: <?=$entry['user_id'];?>, post_id: <?=$entry['id'];?>,text:current_<?=$entry['id'] ?>,date:curDateTime01 }
+    type: "POST",  
+    url: "wall_ajax/index.php",
+    data: { author_id: <?=$entry['user_id'];?>, post_id: <?=$entry['id'];?>,text:current_<?=$entry['id'] ?>,date:curDateTime01 }
 })
  .done(function( msg ) {
-    alert( "Data Saved:");
+    alert( "your data is saved");
   })
 }
-<?php // end?>
+
 </script>
-						</div>
-
-
-
 
 
 
@@ -760,25 +751,25 @@ $.ajax({
                                                     $cuserdetails = WallModel::getUserDetails($entityManager, $comment['author_id']);
                                                     //echo '<pre>'; print_r($cuserdetails);
                                             ?>
-					
+                    
 <div class="slider_two_title">
-								<img src="uploads/<?php echo $cuserdetails[0]['profile_pic']; ?>" alt="<?php echo $comment['1firstname'] ?> <?php echo $comment['1lastname'] ?>" style="width:37px;height:37px;">
-								<div class="slider_title_style 1single-comment">
-									<a href="#"><span class="author_slide_top"><?php echo $comment['firstname'] ?> <?php echo $comment['lastname'] ?></span></a>
-									<span class="comment_box_bottom_text"><?php echo Functions::addLink($comment['text']) ?></span>
-									<a href="#"><p class="like_and_reply"><span>Like</span><span class="comment_reply">Reply</span> · <?php echo date('m/d/Y H:i:s', strtotime($comment['date'])) ?></p></a>									
-								</div>
-							</div><div class="line"></div>
+                                <img src="uploads/<?php echo $cuserdetails[0]['profile_pic']; ?>" alt="<?php echo $comment['1firstname'] ?> <?php echo $comment['1lastname'] ?>" style="width:37px;height:37px;">
+                                <div class="slider_title_style 1single-comment">
+                                    <a href="#"><span class="author_slide_top"><?php echo $comment['firstname'] ?> <?php echo $comment['lastname'] ?></span></a>
+                                    <span class="comment_box_bottom_text"><?php echo Functions::addLink($comment['text']) ?></span>
+                                    <a href="#"><p class="like_and_reply"><span>Like</span><span class="comment_reply">Reply</span> · <?php echo date('m/d/Y H:i:s', strtotime($comment['date'])) ?></p></a>                                    
+                                </div>
+                            </div><div class="line"></div>
 <?php endforeach ?>
 </div>
 
 
 </div>
 
-<?php
 
+
+<?php
                                                                 $postids++;
-                                                                
                                                             }
 ?>
 <div id="loadorders"></div>
@@ -941,7 +932,7 @@ $.ajax({
 
                     <!-- Responsive Tabs JS -->
                     <script src="js/tab/jquery.responsiveTabs.js" type="text/javascript"></script>
-                   	<script src="js/main.js"></script>
+                    <script src="js/main.js"></script>
 
                     <script type="text/javascript">
                         //     $(document).ready(function() {
@@ -1029,111 +1020,105 @@ $.ajax({
 <script src="js/jquery-sortable-photos.js"></script> 
 
 <script src="js/imglazyload.js"></script>
-		<script>
-			var curDateTime = '<?php echo date('Y-m-d H:i:s');?>';
-			var showCount = 0;
-			var nowCount=0
-			var javaScriptDate = new Date();
-			var differSec =0;
-			
-			
-		//	alert('CurDaet:'+curDateTime+':Java:'+date);
-			/*$.ajax({
-				  type: "POST",
-				  url: "tweets_ajax.php",
-				  data:{curTime:curDateTime},
-				
-				  success: function(data){
-					$(".wallEntries").prepend(data);
-					
-					$('.notshow').each(function() {
-						var $ids = $('[id=' + this.id + ']');
-						if ($ids.length > 1) {
-							$ids.not(':first').remove();
-						}
-					});
-					
-					showCount = $(".notshow").length;
-					if(showCount>nowCount)
-					{
-						nowCount = showCount;
-						
-						
-						curDateTime = '<?php echo date('Y-m-d H:i:s');?>';
-						var currentMsg ='<p>'+nowCount+' New Posts. </p>';
-						$('.tweetsAct').html(currentMsg);
-						$('.tweetsAct').removeClass('notshow');
-					}
-					setTimeout(function(){
-						checkNewActivity();
-						},2000);
-				  }
-				});*/
-				
-				
-				
-				
-			function checkNewActivity(){
-			$.ajax({
-				  type: "POST",
-				  url: "tweets_ajax.php",
-				  data:{curTime:curDateTime,differSec:differSec},
-				
-				  success: function(data){
-					
-					$(".wallEntries").prepend(data);
-					
-					$('.notshow').each(function() {
-						var $ids = $('[id=' + this.id + ']');
-						if ($ids.length > 1) {
-							$ids.not(':last').remove();
-						}
-					});
-					
-					showCount = $(".notshow").length;
-					if(showCount>nowCount)
-					{
-						nowCount = showCount;
-						var currentMsg ='<p>'+nowCount+' New Posts. </p>';
-						$('.tweetsAct').html(currentMsg);
-						$('.tweetsAct').removeClass('notActshow');
-						var newJavaDate = new Date;
-						differSec = (newJavaDate-javaScriptDate)/1000;
-						//curDateTime = '<?php echo date('Y-m-d H:i:s');?>';
-					}
-					setTimeout(function(){
-						checkNewActivity();
-						},1000);
-				  }
-				  
-				});
-		}
+        <script>
+            var curDateTime = '<?php echo date('Y-m-d H:i:s');?>';
+            var showCount = 0;
+            var nowCount=0
+            var javaScriptDate = new Date();
+            var differSec =0;
+        //  alert('CurDaet:'+curDateTime+':Java:'+date);
+            /*$.ajax({
+                  type: "POST",
+                  url: "tweets_ajax.php",
+                  data:{curTime:curDateTime},
+                
+                  success: function(data){
+                    $(".wallEntries").prepend(data);
+                    
+                    $('.notshow').each(function() {
+                        var $ids = $('[id=' + this.id + ']');
+                        if ($ids.length > 1) {
+                            $ids.not(':first').remove();
+                        }
+                    });
+                    
+                    showCount = $(".notshow").length;
+                    if(showCount>nowCount)
+                    {
+                        nowCount = showCount;
+                        
+                        
+                        curDateTime = '<?php echo date('Y-m-d H:i:s');?>';
+                        var currentMsg ='<p>'+nowCount+' New Posts. </p>';
+                        $('.tweetsAct').html(currentMsg);
+                        $('.tweetsAct').removeClass('notshow');
+                    }
+                    setTimeout(function(){
+                        checkNewActivity();
+                        },2000);
+                  }
+                });*/
+            function checkNewActivity(){
+            $.ajax({
+                  type: "POST",
+                  url: "tweets_ajax.php",
+                  data:{curTime:curDateTime,differSec:differSec},
+                
+                  success: function(data){
+                    
+                    $(".wallEntries").prepend(data);
+                    
+                    $('.notshow').each(function() {
+                        var $ids = $('[id=' + this.id + ']');
+                        if ($ids.length > 1) {
+                            $ids.not(':last').remove();
+                        }
+                    });
+                    
+                    showCount = $(".notshow").length;
+                    if(showCount>nowCount)
+                    {
+                        nowCount = showCount;
+                        var currentMsg ='<p>'+nowCount+' New Posts. </p>';
+                        $('.tweetsAct').html(currentMsg);
+                        $('.tweetsAct').removeClass('notActshow');
+                        var newJavaDate = new Date;
+                        differSec = (newJavaDate-javaScriptDate)/1000;
+                        //curDateTime = '<?php echo date('Y-m-d H:i:s');?>';
+                    }
+                    setTimeout(function(){
+                        checkNewActivity();
+                        },1000);
+                  }
+                  
+                });
+        }
 
 $('.tweetsAct').live("click",function(){
-				
-				$('.notshow').removeClass('notshow');
-					showCount=0;
-					nowCount=0;
-					$('.tweetsAct').addClass('notActshow');
-				});
-		
-			$('.preview img').imgLazyLoad({
-				container: window,
-				effect: 'fadeIn',
-				speed: 600,
-				delay: 400,
-				callback: function(){
+                
+                $('.notshow').removeClass('notshow');
+                    showCount=0;
+                    nowCount=0;
+                    $('.tweetsAct').addClass('notActshow');
+                });
+        
+            $('.preview img').imgLazyLoad({
+                container: window,
+                effect: 'fadeIn',
+                speed: 600,
+                delay: 400,
+                callback: function(){
 
-					$( this ).css( 'opacity', .99 );
+                    $( this ).css( 'opacity', .99 );
 
-				}
-			});
+                }
+            });
 
-			</script>
+            </script>
 
 <script>
 $('.photo-grid-container').sortablePhotos({
       selector: '> .photo-grid-item',
-	  padding: 5
+      padding: 5
     });
 </script>
