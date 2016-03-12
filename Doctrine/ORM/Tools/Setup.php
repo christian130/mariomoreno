@@ -71,7 +71,7 @@ class Setup
     static public function registerAutoloadPEAR()
     {
         if (!class_exists('Doctrine\Common\ClassLoader', false)) {
-            require_once "Doctrine/Common/ClassLoader.php";
+            require_once 'DoctrineCommon\ClassLoader.php';
         }
 
         $loader = new ClassLoader("Doctrine");

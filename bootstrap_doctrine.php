@@ -3,8 +3,7 @@
 
 // See :doc:`Configuration <../reference/configuration>` for up to date autoloading details.
 use Doctrine\ORM\Tools\Setup;
-
-require_once "Doctrine/ORM/Tools/Setup.php";
+require_once($_SERVER['DOCUMENT_ROOT']."betaPhase\\Doctrine\\ORM\\Tools\\Setup.php");
 Setup::registerAutoloadPEAR();
 
 // Create a simple "default" Doctrine ORM configuration for XML Mapping
