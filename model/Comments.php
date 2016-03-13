@@ -11,8 +11,8 @@ class CommentsModel {
         $entry->setText($params['text']);
         $entry->setDate($params['date']);
 		//echo '<pre>';
-print_r($params);
-die();
+//print_r($params);
+//die();
         $entityManager->getConnection()->beginTransaction();
         try {
             $res = $entityManager->persist($entry);
@@ -54,12 +54,12 @@ die();
         try {
             $dql = "SELECT c.text, c.date, c.author_id, u.firstname, u.lastname
                 FROM Wall w,Comments c,UserRegister u
-                WHERE u.user_id=w.author_id and w.id=c.post_id and c.post_id =:post order by c.date asc";
+                WHERE u.user_id=w.author_id and w.id=c.post_id and c.post_id =:post order by c.date asc";                
             $query = $entityManager->createQuery($dql);
             $query->setParameters(array(
                 'post' => $post_id
             ));
-             return $query->getArrayResult();
+             return die(json_encode(var_dump($query->getArrayResult())));
         } catch (Exception $e) {
             $entityManager->getConnection()->rollback();
             $entityManager->close();

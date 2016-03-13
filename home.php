@@ -123,6 +123,7 @@ unset($_SESSION['profileid']);
         $entries[$key]['comments'] = $comments;
         $entries[$key]['photos'] = $photos;
     }
+    //if count(){}
 //echo '<pre>';
 //print_r($entries);
     //include 'html/wall_ajax.php';
