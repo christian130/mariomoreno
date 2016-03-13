@@ -56,7 +56,7 @@ class CommentsModel {
 $statement->execute();*/
 
             $q = $entityManager
-            ->getConnection()
+            ->getConnection() 
             ->prepare("select comments.text,comments.date,comments.author_id,sh_users.firstname,sh_users.lastname from sh_users, comments,wall where sh_users.user_id=wall.author_id and wall.id=comments.post_id and comments.post_id=".$post_id." order by comments.date asc");
             $q->execute();
             //$users = $statement->fetchAll();
