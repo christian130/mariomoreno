@@ -39,5 +39,5 @@ change the database entries in here:
   C:\Users\Christian\Desktop\whatsaddily\betaPhase\betaPhase\model\sql_config.php (2 hits)
 	Line 2: $conn=mysql_connect("localhost","root","") or die ("not connceted");
 	Line 3: $db=mysql_select_db("whats_site",$conn) or die ("not connceted");
-	also in 
 	
+also in the three the bootstrap config file and each one of executeNotification.php

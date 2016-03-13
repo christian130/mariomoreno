@@ -733,11 +733,11 @@ var current_<?=$entry['id'] ?>=jQuery("#comminput_<?=$entry['id'] ?>").val();
 $.ajax({
     type: "POST",  
     url: "wall_ajax/index.php",
-    data: { author_id: <?=$entry['user_id'];?>, post_id: <?=$entry['id'];?>,text:current_<?=$entry['id'] ?>,date:curDateTime01 }
+    data: { author_id: <?=$session->getSession("userid");?>, post_id: <?=$entry['id'];?>,text:current_<?=$entry['id'] ?>,date:curDateTime01 }
 })
  .done(function( msg ) {
-    alert( "your data is saved");
-  })
+    alert( "now the html should be insert after here... this alert should be removed!");
+  }) 
 }
 
 </script>
