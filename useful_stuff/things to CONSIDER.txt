@@ -1,0 +1,43 @@
+<<<< TASK >>>>
+develop a div 
+cause the feeds switch
+but i just want you to do the comments 
+and replies
+<<<< TASK >>>>
+
+
+www.whatsdadilly.com/betaPhase
+login as Email : whatsdadilly2000@yahoo.com
+pass: bossman91gs
+we doing social media my friend
+
+another user is:
+80sbabiesbeats@gmail.com
+bossman91gs
+THIS IS THE ANNOYING THINGS TO DESACTIVATE IN DEV MODE
+http://www.whatsdadilly.com/betaPhase/tweets_ajax.php	
+use this URL to get in
+
+http://www.whatsdadilly.com/betaPhase
+change the database entries in here:
+
+ C:\Users\Christian\Desktop\whatsaddily\betaPhase\betaPhase\fonts\html\header12jul.php (2 hits)
+	Line 4: $conn=mysql_connect("localhost","root","(}0#n.oxn9rq") or die ("not connceted");
+	Line 5: $db=mysql_select_db("sathish_wdd",$conn) or die ("not connceted");
+  C:\Users\Christian\Desktop\whatsaddily\betaPhase\betaPhase\html\executeNotification.php (2 hits)
+	Line 3: $conn=mysql_connect("localhost","wwwwhats_root","ZlS(O2nFmqMZ") or die ("not connceted");
+	Line 4: $db=mysql_select_db("wwwwhats_betaPhase",$conn) or die ("not connceted");
+  C:\Users\Christian\Desktop\whatsaddily\betaPhase\betaPhase\html\notif.php (2 hits)
+	Line 2: $conn=mysql_connect("localhost","root","(}0#n.oxn9rq") or die ("not connceted");
+	Line 3: $db=mysql_select_db("sathish_wdd",$conn) or die ("not connceted");
+  C:\Users\Christian\Desktop\whatsaddily\betaPhase\betaPhase\js\jq.js (2 hits)
+	Line 7: $conn=mysql_connect("localhost","root","(}0#n.oxn9rq") or die ("not connceted");
+	Line 8: $db=mysql_select_db("sathish_wdd",$conn) or die ("not connceted");
+  C:\Users\Christian\Desktop\whatsaddily\betaPhase\betaPhase\model\executeNotification.php (2 hits)
+	Line 3: $conn=mysql_connect("localhost","wwwwhats_root","ZlS(O2nFmqMZ") or die ("not connceted");
+	Line 4: $db=mysql_select_db("wwwwhats_betaPhase",$conn) or die ("not connceted");
+  C:\Users\Christian\Desktop\whatsaddily\betaPhase\betaPhase\model\sql_config.php (2 hits)
+	Line 2: $conn=mysql_connect("localhost","root","") or die ("not connceted");
+	Line 3: $db=mysql_select_db("whats_site",$conn) or die ("not connceted");
+	also in 
+	
