@@ -736,7 +736,7 @@ $.ajax({
     data: { author_id: <?=$session->getSession("userid");?>, post_id: <?=$entry['id'];?>,text:current_<?=$entry['id'] ?>,date:curDateTime01 }
 })
  .done(function( msg ) {
-    alert( "now the html should be insert after here... this alert should be removed!");
+    alert( "now the html should be insert after here... this alert should be removed later!");
   }) 
 }
 
