@@ -11,8 +11,8 @@ class CommentsModel {
         $entry->setText($params['text']);
         $entry->setDate($params['date']);
 		//echo '<pre>';
-print_r($params);
-die();
+//print_r($params);
+//die();
         $entityManager->getConnection()->beginTransaction();
         try {
             $res = $entityManager->persist($entry);
@@ -50,16 +50,26 @@ die();
     public static function getComments($post_id,$entityManager)
     {
        
-        $entityManager->getConnection()->beginTransaction();
+        //$entityManager->getConnection()->beginTransaction();
         try {
-            $dql = "SELECT c.text, c.date, c.author_id, u.firstname, u.lastname
+            /*$statement = $conn->prepare('SELECT * FROM user');
+$statement->execute();*/
+
+            $q = $entityManager
+            ->getConnection() 
+            ->prepare("select comments.text,comments.date,comments.author_id,sh_users.firstname,sh_users.lastname from sh_users, comments,wall where sh_users.user_id=wall.author_id and wall.id=comments.post_id and comments.post_id=".$post_id." order by comments.date asc");
+            $q->execute();
+            //$users = $statement->fetchAll();
+            $results = $q->fetchAll();
+
+            /*$dql = "SELECT c.text, c.date, c.author_id, u.firstname, u.lastname
                 FROM Wall w,Comments c,UserRegister u
-                WHERE u.user_id=w.author_id and w.id=c.post_id and c.post_id =:post order by c.date desc";
-            $query = $entityManager->createQuery($dql);
+                WHERE u.user_id=w.author_id and w.id=c.post_id and c.post_id =:post order by c.date asc"; */               
+            /*$query = $entityManager->createQuery($dql);
             $query->setParameters(array(
                 'post' => $post_id
-            ));
-             return $query->getArrayResult();
+            ));*/
+             return $results;
         } catch (Exception $e) {
             $entityManager->getConnection()->rollback();
             $entityManager->close();

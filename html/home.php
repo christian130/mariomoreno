@@ -715,7 +715,7 @@ border: 1px solid #ccc;margin: 7px 5px;    box-shadow: 0px 0px 1px #ccc;
                             <a href="#"><span><i class="comment_box_left2 fa fa-smile-o"></i></span></a></div>
                             <h5 class="press_enter_post">Press enter to post or press this button: </h5>
                         </div>
-
+<?php //var_dump($_SESSION)?>
 <script type="text/javascript">
 //@Author: sistemasphpvenezuela.com
 
@@ -731,13 +731,26 @@ var curDateTime01 = '<?php echo date('Y-m-d H:i:s');?>';
 var current_<?=$entry['id'] ?>=jQuery("#comminput_<?=$entry['id'] ?>").val();
 
 $.ajax({
-    type: "POST",  
+    type: "POST",
+    dataType:"html",
     url: "wall_ajax/index.php",
-    data: { author_id: <?=$entry['user_id'];?>, post_id: <?=$entry['id'];?>,text:current_<?=$entry['id'] ?>,date:curDateTime01 }
+    data: { 
+     author_id:'<?=$session->getSession("userid");?>'
+    ,post_id:'<?=$entry['id'];?>'
+    ,text:current_<?=$entry['id'];?>
+    ,date:curDateTime01
+    ,anotherData:'<?php echo trim($_SESSION['profile_pic']);?>'
+    ,firstName01:'<?php echo trim($_SESSION['firstname']);?>'
+    ,lastName01:'<?php echo trim($_SESSION['lastname']);?>'
+}
 })
  .done(function( msg ) {
-    alert( "your data is saved");
-  })
+    //alert( "now the html should be insert after here... this alert should be removed later!");
+    $("#comminput_<?=$entry['id'];?>").val("");// we clear the input comment box
+    //jQuery("div[rel='<?=$entry['id'];?>']").after(msg);
+    $("#comment_<?=$entry['id'];?> >.slider_two_title").last().append(msg);
+
+  }) 
 }
 
 </script>
