@@ -9,8 +9,8 @@ $params02= Array(
 "text"=>$_POST["text"],
 "date"=>$_POST["date"]
 );
-filter_var_array($params02); //this is an inner PHP commands for SQL injections and all of those stuffs
-//die();
+var_dump(filter_var_array($params02));
+die();
 AnotherCommentsModel::addComment01($entityManager,$params02);
 
 echo '<div class="slider_two_title">
