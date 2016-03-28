@@ -749,12 +749,10 @@ $.ajax({
     $("#comminput_<?=$entry['id'];?>").val("");// we clear the input comment box
     //jQuery("div[rel='<?=$entry['id'];?>']").after(msg);
 	if (typeof($("#comment_<?=$entry['id'];?> >.slider_two_title").after())=='undefined'){
-$("#comment_<?=$entry['id'];?>").append(msg);
-alert("i'm here");
-}else if (typeof($("#comment_<?=$entry['id'];?> >.slider_two_title").after())!='undefined'){
-$("#comment_<?=$entry['id'];?> >.slider_two_title").last().append(msg);
-alert("i'm here anyway")
-}
+	$("#comment_<?=$entry['id'];?>").append(msg);
+	}else if (typeof($("#comment_<?=$entry['id'];?> >.slider_two_title").after())!='undefined'){
+	$("#comment_<?=$entry['id'];?> >.slider_two_title").last().append(msg);
+	}
     
 
   }) 

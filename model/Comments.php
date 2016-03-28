@@ -75,8 +75,8 @@ left join wall on wall.id=comments.post_id where comments.post_id=".$post_id." o
             ));*/
              return $results;
         } catch (Exception $e) {
-            $entityManager->getConnection()->rollback();
-            $entityManager->close();
+            $q->getConnection()->rollback();
+            $q->close();
             var_dump($e->getMessage());
             throw $e;
         }

@@ -752,9 +752,7 @@ $.ajax({
 	$("#comment_<?=$entry['id'];?>").append(msg);
 	}else if (typeof($("#comment_<?=$entry['id'];?> >.slider_two_title").after())!='undefined'){
 	$("#comment_<?=$entry['id'];?> >.slider_two_title").last().append(msg);
-	}
-    
-
+	}   
   }) 
 }
 
