@@ -1,0 +1,95 @@
+commit dcd12c01aee2c71fd04a99f51ae39d638cd40ed2
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sun Mar 13 00:42:10 2016 -0430
+
+    oh i forgot in the last commit it's having me the wrong people from the sentence directly from sql... it's something weird... in model/comments.php in the line sixty (60) i'm launching a raw SQL but it's not giving me the errors... possible error bad joins... have to do the left and the right and inner properly, but i'm quite tired today
+
+commit 23f8f801429ba3d071abfb41d2d447053c396095
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sun Mar 13 00:38:49 2016 -0430
+
+    i think i'm going to bed man tomorrow we'll see what i've forward and you give me for my meal...
+
+commit bc20f11bd94055b698ac9622fe2e3c128e3afd90
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sat Mar 12 23:38:59 2016 -0430
+
+    aded the ajax call but it seems where the comments are retrieved, the sql is bad and is returning a wrong person
+
+commit 8812fd843759cf61939785a0c3a139edd37474a5
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sat Mar 12 21:18:26 2016 -0430
+
+    just forgot something to remember in the alert that should be removed... but later, first i'll look for it how can i reply a comment
+
+commit 81f0b7a83923d483af1653d194b217b54154ecda
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sat Mar 12 21:09:32 2016 -0430
+
+    now the records shows in order ascending...
+
+commit 80e329ec876c6535e6a0be7fc5af00de3e405403
+Author: Christian <christian130@gmail.com>
+Date:   Sat Mar 12 20:02:10 2016 -0430
+
+    you should read things to consider... the other one mine02 is a backup
+
+commit 53a8d8786321f35b9e29e8148d84970c9eeb5894
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sat Mar 12 01:53:19 2016 -0430
+
+    now it write it down with purely ORM... when you push the enter button it'll go to the DB and stores it... now the thing i've got to do is 'sanitize' the post... THE ENTER BUTTON WORKS into the machine and it's supported...
+
+commit 4010ec31e2819541cf43909b60a233bbbf11fbeb
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sat Mar 12 00:28:17 2016 -0430
+
+    finally it can write a comment! i told you chris that i was going to do so! i had to edit setup.php in the ORM, and then finally i created a beatiful ajax request where i can save my comments... it's ok but now the comments should be appers so one person can reply to it... it's not easy chris, at least not for normal people XD kidding...just call me to home 02432459163 remember you need to call the international venezuelan code
+
+commit 2513158c8655e35aec0c4e8b63f920a9e5ee5f65
+Author: christian130@gmail.com <christian130@gmail.com>
+Date:   Sat Mar 12 00:01:44 2016 -0430
+
+    initializing variables... with the new engine in unix like OS... finally it connects to the ORM it's giving me some error...
+
+commit 40088567944182b5eab7abb17842b349da2b3af3
+Author: Christian <christian130@gmail.com>
+Date:   Fri Mar 11 21:50:05 2016 -0430
+
+    03/11/2016 at 9:48PM, including some useful things like SQL and some other stuff to be prepared for the moving of the code
+
+commit 77e7071be24f2d017741e40cf98cb8726fdddacf
+Author: Christian <christian130@gmail.com>
+Date:   Fri Mar 11 20:28:39 2016 -0430
+
+    march eleventh 2016 at 08:28PM (-04:30 UTC) made some changes... i tried what i could
+
+commit fc16fb7d2dce54ece20525f98938eb80d527e26f
+Author: Christian <christian130@gmail.com>
+Date:   Fri Mar 11 20:02:27 2016 -0430
+
+    with this update you're able to save the post in the mysql designated database
+
+commit 25423485bfa60a4911134a3b12c98eff42e4a9be
+Author: Christian <christian130@gmail.com>
+Date:   Fri Mar 11 19:03:42 2016 -0430
+
+    fourth commit with the contents in the www folder...
+
+commit e3c56795d5084b1f75d1c95fa83a00d09af0c91f
+Author: Christian <christian130@gmail.com>
+Date:   Fri Mar 11 18:54:07 2016 -0430
+
+    equis
+
+commit 5c31653dfbe379cb697bbcb3dde83d6d01d90eb0
+Author: Christian <christian130@gmail.com>
+Date:   Fri Mar 11 18:45:33 2016 -0430
+
+    segundo commit
+
+commit 63f192213d16157b60c58dfe68c3b498fe20e2f9
+Author: Christian <christian130@gmail.com>
+Date:   Fri Mar 11 17:48:29 2016 -0430
+
+    primer commit con el codigo ya preparado

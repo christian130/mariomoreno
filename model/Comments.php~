@@ -57,11 +57,7 @@ $statement->execute();*/
 
             $q = $entityManager
             ->getConnection() 
-
-
-            ->prepare("select wall.id AS id,comments.text AS text,comments.date AS date,comments.author_id AS author_id,sh_users.firstname AS firstname,sh_users.lastname AS lastname from comments 
-left join sh_users on sh_users.user_id=comments.author_id
-left join wall on wall.id=comments.post_id where comments.post_id=".$post_id." order by comments.date asc");
+            ->prepare("select comments.text,comments.date,comments.author_id,sh_users.firstname,sh_users.lastname from sh_users, comments,wall where sh_users.user_id=wall.author_id and wall.id=comments.post_id and comments.post_id=".$post_id." order by comments.date asc");
             $q->execute();
             //$users = $statement->fetchAll();
             $results = $q->fetchAll();
